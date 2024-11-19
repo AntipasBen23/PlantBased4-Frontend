@@ -1,0 +1,1754 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    max-width: 1440px;
+    /* outline: red solid 1px; */
+  }
+
+  /* General Fonts */
+  h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  li{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+
+  }
+
+  h2{
+    font-size: 1.8rem;
+    font-family: 'Roboto', sans-serif;
+ }
+
+  h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+  }
+
+  p{
+    font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+ /* HeroSection */
+.wrapper {
+    position: fixed;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    overflow: hidden;
+}
+
+.backgr {
+    background-image: 
+        linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), 
+        url(./assets/Plantbsd2bckggg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5rem;
+    position: relative;
+    min-height: 100vh;
+}
+
+.content {
+    z-index: 1;
+    position: relative;
+    margin-top: 0; /* Removed negative margins for better scalability */
+    text-align: center; /* Aligns content in the center */
+}
+
+.box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: left;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.list-section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.list-section:last-child {
+    margin-right: 0;
+}
+
+.HeroList ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.HeroList ul li {
+    color: #609a33;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    padding: 5px;
+}
+
+.box {
+    text-align: center; /* Center-aligns text and inline elements within .box */
+}
+
+.box h1,
+.box p,
+.HeroList ul li {
+    color: #609a33;
+    list-style: none; /* Optional: removes default list styling */
+    text-align: center; /* Ensures text is centered in the list items */
+    margin: 0 auto; /* Centers list items if they have a specific width */
+}
+
+.HeroList ul {
+    padding: 0; /* Removes default padding */
+    margin: 0 auto; /* Centers the list itself */
+    display: inline-block; /* Makes the list behave like an inline element */
+}
+
+.listContainer .Btnvk {
+    padding: 10px 15px;
+    background-color: #ffa200;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 2rem;
+}
+
+
+.enquiry-button {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.enquiry-button .Btnvk {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.listContainer button:hover {
+    background-color: #e68a00;
+}
+
+.HeroDown {
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.RightTxt {
+    background-color: transparent;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.HeroDown .btnRight {
+    padding: 15px 30px;
+    background-color: #7fb401;
+    color: #fff;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    display: inline-block;
+    z-index: 10;
+}
+
+/* Make an Enquiry Button Hover */
+.listContainer .Btnvk:hover {
+    background-color: #e68a00; /* Darker orange */
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Click Here Button Hover */
+.HeroDown .btnRight:hover {
+    background-color: #6a9d01; /* Darker green */
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+
+.RightTxt:hover {
+    color: #4a7e26;
+}
+
+/* Responsive Styles */
+
+/* 1024px - Tablets and small desktops */
+@media (max-width: 1024px) {
+    .backgr {
+        padding: 4rem 2rem;
+    }
+
+    .content {
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .box {
+        max-width: 80%;
+    }
+
+    .HeroList ul li {
+        font-size: 1rem;
+    }
+
+    .HeroDown .btnRight {
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+
+    .RightTxt {
+        font-size: 1.8rem;
+    }
+}
+
+/* 768px - Small tablets */
+@media (max-width: 768px) {
+    .backgr {
+        padding: 3rem 1rem;
+    }
+
+    .box {
+        max-width: 90%;
+    }
+
+    .HeroList ul li {
+        font-size: 0.9rem;
+    }
+
+    .HeroDown .btnRight {
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
+
+    .RightTxt {
+        font-size: 1.5rem;
+    }
+}
+
+/* 480px - Mobile devices */
+@media (max-width: 480px) {
+    .backgr {
+        padding: 2rem 1rem;
+    }
+
+    .box {
+        max-width: 95%;
+        padding: 15px;
+    }
+
+    .HeroList ul li {
+        font-size: 0.85rem;
+    }
+
+    .HeroDown .btnRight {
+        font-size: 0.85rem;
+        padding: 8px 12px;
+    }
+
+    .RightTxt {
+        font-size: 1.3rem;
+    }
+}
+
+/* 375px - Small mobile devices */
+@media (max-width: 375px) {
+    .backgr {
+        padding: 2rem 1rem;
+    }
+
+    .box {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .HeroList ul li {
+        font-size: 0.8rem;
+    }
+
+    .HeroDown .btnRight {
+        font-size: 0.8rem;
+        padding: 8px 10px;
+    }
+
+    .RightTxt {
+        font-size: 1.2rem;
+    }
+}
+
+
+/* Enquiry Form */
+.enquiry-form-container {
+    position: relative;
+    max-width: 60rem;
+    animation: gradientBG 10s ease infinite;
+    margin: 5rem auto;
+    padding: 20px;
+    background-color: rgba(249, 249, 249, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+.enquiry-form-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('./assets/Plantbased2Logo.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    opacity: 0.3;
+}
+
+.enquiry-form-container h1 {
+    color: #609a33;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #609a33;
+    font-size: 1.2rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px 12px 12px 40px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box; /* Ensure consistent sizing */
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #609a33;
+    outline: none;
+    box-shadow: 0 0 5px rgba(96, 154, 51, 0.5);
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+button[type="submit"] {
+    background-color: #609a33;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+button[type="submit"]:hover {
+    background: linear-gradient(90deg, #4a7e26, #3b6a1e);
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Styles */
+
+/* Large Screens (1440px) */
+@media (max-width: 1440px) {
+    .enquiry-form-container {
+        max-width: 55rem;
+        padding: 30px;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Medium Screens (1024px - Tablets) */
+@media (max-width: 1024px) {
+    .enquiry-form-container {
+        max-width: 50rem;
+        padding: 25px;
+        margin: 4rem auto;
+    }
+    h1 {
+        font-size: 1.6rem;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 15px;
+        padding: 10px;
+    }
+    button[type="submit"] {
+        font-size: 15px;
+        padding: 10px 18px;
+    }
+}
+
+/* Small Tablets (768px) */
+@media (max-width: 768px) {
+    .enquiry-form-container {
+        max-width: 40rem;
+        padding: 20px;
+        margin: 3rem auto;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+    button[type="submit"] {
+        font-size: 14px;
+        padding: 10px 16px;
+    }
+}
+
+/* Mobile Screens (480px) */
+@media (max-width: 480px) {
+    .enquiry-form-container {
+        max-width: 90%;
+        padding: 15px;
+        margin: 2rem auto;
+    }
+    h1 {
+        font-size: 1.4rem;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 13px;
+        padding: 8px;
+    }
+    button[type="submit"] {
+        font-size: 13px;
+        padding: 8px 14px;
+        width: 100%; /* Full width for buttons on smaller screens */
+    }
+}
+
+/* Small Phones (375px) */
+@media (max-width: 375px) {
+    .enquiry-form-container {
+        max-width: 90%;
+        padding: 10px;
+    }
+    h1 {
+        font-size: 1.2rem;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 12px;
+        padding: 8px;
+    }
+    button[type="submit"] {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+}
+
+ 
+/* Section2 */
+.secondSection {
+    display: flex;
+    margin: 0 auto; /* Center section */
+    width: 100%; /* Ensure it spans full width */
+    max-width: 1440px;
+    padding: 0 50px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    height: 100vh;
+    margin: 80px auto 100px;
+    flex-wrap: nowrap;
+}
+
+/* Carousel Container */
+.carouselContainer {
+    flex: 1;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.imageSlider {
+    display: flex;
+    transition: transform 1s cubic-bezier(0.25, 1, 0.5, 1);    width: 100%;
+    height: 100%;
+}
+
+.carouselImage {
+    flex: 0 0 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Content Section */
+.contentss {
+    flex: 1;
+    text-align: left;
+    padding-left: 40px; /* Increased padding for better spacing */
+}
+
+.contentss .parr {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #609a33;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.contentss p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+
+.S2Btn {
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    background: linear-gradient(90deg, #609a33, #4a7e26);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.S2Btn:hover {
+    background: linear-gradient(90deg, #4a7e26, #609a33);
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Styles */
+
+/* 1440px - Large desktop screens */
+@media (max-width: 1440px) {
+    .secondSection {
+        max-width: 1200px;
+        padding: 50px;
+    }
+
+    .contentss .parr {
+        font-size: 1.8rem;
+    }
+
+    .contentss p {
+        font-size: 1.3rem;
+    }
+
+    .S2Btn {
+        padding: 10px 20px;
+        font-size: 1.1rem;
+    }
+}
+
+/* 1024px - Tablets and smaller desktops */
+@media (max-width: 1024px) {
+    .secondSection {
+        padding: 40px;
+        margin-top: 60px;
+        flex-wrap: wrap;
+    }
+
+    .carouselContainer {
+        height: 400px;
+    }
+
+    .contentss {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .contentss .parr {
+        font-size: 1.6rem;
+    }
+
+    .contentss p {
+        font-size: 1.1rem;
+    }
+
+    .S2Btn {
+        padding: 9px 18px;
+        font-size: 0.95rem;
+    }
+}
+
+/* 768px - Tablets */
+@media (max-width: 768px) {
+    .secondSection {
+        flex-direction: column;
+        padding: 30px 20px;
+        height: auto;
+    }
+
+    .carouselContainer {
+        height: 300px;
+        margin-bottom: 1.5rem;
+    }
+
+    .imageSlider {
+        height: 100%;
+    }
+
+    .carouselImage {
+        height: auto;
+        object-fit: contain;
+    }
+
+    .contentss {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .contentss .parr {
+        font-size: 1.4rem;
+    }
+
+    .contentss p {
+        font-size: 1rem;
+    }
+
+    .S2Btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
+
+/* 480px - Small phones */
+@media (max-width: 480px) {
+    .secondSection {
+        padding: 20px;
+        height: auto;
+        margin: 50px auto;
+    }
+
+    .carouselContainer {
+        height: 250px;
+    }
+
+    .carouselImage {
+        height: 200px;
+    }
+
+    .contentss .parr {
+        font-size: 1.3rem;
+    }
+
+    .contentss p {
+        font-size: 0.9rem;
+    }
+
+    .S2Btn {
+        font-size: 0.85rem;
+        padding: 7px 14px;
+    }
+}
+
+/* 375px - Very small phones */
+@media (max-width: 375px) {
+    .secondSection {
+        padding: 15px;
+    }
+
+    .carouselContainer {
+        height: 200px;
+    }
+
+    .carouselImage {
+        height: 150px;
+    }
+
+    .contentss .parr {
+        font-size: 1.2rem;
+    }
+
+    .contentss p {
+        font-size: 0.85rem;
+    }
+
+    .S2Btn {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+}
+
+
+/* Healing-Programs Section */
+.healing-progrs {
+    background-color: #ffffff;
+    padding: 40px;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.healing-progrs h1 {
+    color: #609a33;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.program-li {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.colum {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.colum:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.program-imag {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.program-imag:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.colum button {
+    padding: 14px 22px;
+    background-color: #609a33;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+    width: 200px;
+}
+
+.colum button:hover {
+    background-color: #4a7e26;
+    transform: scale(1.1);
+
+}
+
+.instruction {
+    color: #609a33;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Program-Details Section */
+.program-details {
+    padding: 40px;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.reviews,
+.scientific-research,
+.healing-procedure {
+    flex: 1;
+}
+
+.rating {
+    color: gold;
+}
+
+.pay-now {
+    padding: 10px 20px;
+    background-color: #609a33;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pay-now:hover {
+    background-color: #4a7e26;
+}
+
+/* Responsive Styles */
+
+/* 1440px and above */
+@media (max-width: 1440px) {
+    .program-li {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .healing-progrs h1 {
+        font-size: 2.3rem;
+    }
+
+    .program-imag {
+        width: 110px;
+        height: 110px;
+    }
+}
+
+/* 1024px - Tablets */
+@media (max-width: 1024px) {
+    .program-li {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .healing-progrs h1 {
+        font-size: 2rem;
+    }
+
+    .colum button {
+        font-size: 0.95rem;
+        width: 160px;
+    }
+
+    .instruction {
+        font-size: 1.1rem;
+    }
+}
+
+/* 768px - Small Tablets */
+@media (max-width: 768px) {
+    .healing-progrs {
+        padding: 20px;
+    }
+
+    .program-li {
+        grid-template-columns: 1fr;
+    }
+
+    .healing-progrs h1 {
+        font-size: 1.8rem;
+    }
+
+    .program-imag {
+        width: 100px;
+        height: 100px;
+    }
+
+    .colum button {
+        width: 100%;
+    }
+
+    .instruction {
+        font-size: 1rem;
+    }
+}
+
+/* 480px - Mobile Devices */
+@media (max-width: 480px) {
+    .healing-progrs {
+        padding: 15px;
+    }
+
+    .healing-progrs h1 {
+        font-size: 1.6rem;
+    }
+
+    .program-imag {
+        width: 90px;
+        height: 90px;
+    }
+
+    .colum button {
+        font-size: 0.9rem;
+        width: 100%;
+    }
+
+    .instruction {
+        font-size: 0.9rem;
+    }
+
+    .columns {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* 375px - Small Phones */
+@media (max-width: 375px) {
+    .program-li {
+        grid-template-columns: 1fr;
+    }
+
+    .program-imag {
+        width: 80px;
+        height: 80px;
+    }
+
+    .colum button {
+        font-size: 0.85rem;
+    }
+
+    .instruction {
+        font-size: 0.85rem;
+    }
+}
+
+/* Reviews Section */
+.reviewsSection {
+    margin-bottom: 30px;
+}
+
+.carouselContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.reviewCard {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    width: 300px;
+}
+
+.reviewImage {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.starRating {
+    color: #FFD700;
+}
+
+/* Scientific Research Section */
+.researchSection {
+    margin-bottom: 10px;
+}
+
+.researchSection p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+}
+
+/* Healing Program Section */
+.healingProgramSection {
+    margin-bottom: 30px;
+}
+
+.healingProgramSection p {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 10px;}
+
+/* Responsive Adjustments for Reviews and Research Sections */
+
+/* 1024px - Tablets */
+@media (max-width: 1024px) {
+    .reviewCard {
+        width: 250px;
+    }
+
+    .researchSection p,
+    .healingProgramSection p {
+        font-size: 1rem;
+    }
+}
+
+/* 768px - Small Tablets */
+@media (max-width: 768px) {
+    .reviewCard {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .researchSection p,
+    .healingProgramSection p {
+        font-size: 0.95rem;
+    }
+}
+
+/* 480px - Mobile Devices */
+@media (max-width: 480px) {
+    .reviewCard {
+        padding: 15px;
+        width: 100%;
+    }
+
+    .reviewImage {
+        width: 80px;
+        height: 80px;
+    }
+
+    .researchSection p,
+    .healingProgramSection p {
+        font-size: 0.9rem;
+    }
+}
+
+/* 375px - Small Phones */
+@media (max-width: 375px) {
+    .reviewCard {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .reviewImage {
+        width: 80px;
+        height: 80px;
+    }
+
+    .researchSection p,
+    .healingProgramSection p {
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+}
+/* Package-Selection Section */
+.productCart {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 30px 10px;
+    background-color: #f3f6ea;
+    max-width: 1200px;
+}
+
+.heading {
+    text-align: center;
+    font-size: 36px;
+    color: #609a33;
+    margin-bottom: 40px;
+    padding: 20px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+.productGrid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.productCard {
+    background-color: #cbe8e1;
+    border-radius: 15px;
+    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 10px auto; /* Ensure spacing between rows */
+}
+
+.productCard:hover {
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.productImage {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.productImage:hover {
+    transform: scale(1.1);
+}
+
+.productName {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.productDescription {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.featureList {
+    padding: 0;
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+.featureItem {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 5px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #28a745;
+    margin-bottom: 15px;
+}
+
+.ctaButton {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+
+.ctaButton:hover {
+    background-color: #218838;
+    transform: scale(1.1);
+}
+
+.custom-swal-input {
+    width: 450px !important; 
+    max-width: 450px;      
+    margin: 0 auto;        
+    display: block;        
+    padding: 10px;         
+    border: 1px solid #ccc; 
+    border-radius: 5px;    
+}
+
+.custom-ok-button {
+    background-color: #b3db94 !important; /* Green background */
+    color: #fff !important; /* White text */
+    border: none !important; /* Remove border */
+    border-radius: 5px; /* Optional: Rounded corners */
+    padding: 10px 20px; /* Optional: Adjust padding */
+    font-size: 16px; /* Optional: Adjust font size */
+    cursor: pointer;
+}
+
+
+/* Responsive Styles */
+
+/* 1440px - Large screens */
+@media (max-width: 1440px) {
+    .productCart {
+        max-width: 90%;
+    }
+
+    .productGrid {
+        gap: 30px;
+    }
+
+    .productCard {
+        width: 280px;
+    }
+}
+
+/* 1024px - Tablets */
+@media (max-width: 1024px) {
+    .heading {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .productCard {
+        width: 250px;
+        padding: 20px;
+    }
+
+    .productDescription {
+        font-size: 15px;
+    }
+
+    .ctaButton {
+        font-size: 14px;
+        padding: 8px 18px;
+    }
+}
+
+/* 768px - Small Tablets */
+@media (max-width: 768px) {
+    .heading {
+        font-size: 26px;
+    }
+
+    .productGrid {
+        gap: 20px;
+    }
+
+    .productCard {
+        width: 220px;
+        padding: 15px;
+    }
+
+    .productDescription {
+        font-size: 14px;
+    }
+
+    .price {
+        font-size: 18px;
+    }
+
+    .ctaButton {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+
+/* 480px - Mobile Devices */
+@media (max-width: 480px) {
+    .heading {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .productCard {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    .productName {
+        font-size: 20px;
+    }
+
+    .productDescription {
+        font-size: 14px;
+    }
+
+    .featureItem {
+        font-size: 13px;
+    }
+
+    .price {
+        font-size: 16px;
+    }
+
+    .ctaButton {
+        font-size: 13px;
+        padding: 8px 15px;
+    }
+}
+
+/* 375px - Small Phones */
+@media (max-width: 375px) {
+    .productCard {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    .productName {
+        font-size: 18px;
+    }
+
+    .productDescription {
+        font-size: 13px;
+    }
+
+    .featureItem {
+        font-size: 12px;
+    }
+
+    .price {
+        font-size: 15px;
+    }
+
+    .ctaButton {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+}
+
+
+/* Program-details Section */
+.program-details {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+.program-details h1 {
+    font-size: 32px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.reviews,
+.scientific-research,
+.healing-procedure {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 280px;
+}
+
+.reviews h2,
+.scientific-research h2,
+.healing-procedure h2 {
+    font-size: 24px;
+    color: #609a33;
+    margin-bottom: 15px;
+}
+
+.review {
+    margin-bottom: 15px;
+    animation: fadeIn 1s ease-in-out;
+    position: relative;
+
+}
+
+.review img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 15px;
+    float: left;
+    object-fit: cover;
+}
+
+.review-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+.review-text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-top: 5px;
+}
+
+.rating {
+    color: #ffcc00;
+    margin-top: 5px;
+}
+
+.healing-procedure ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.pay-now {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.pay-now:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Styles */
+
+/* 1440px - Large screens */
+@media (max-width: 1440px) {
+    .program-details {
+        max-width: 90%;
+    }
+
+    .columns {
+        gap: 25px;
+    }
+
+    .reviews h2,
+    .scientific-research h2,
+    .healing-procedure h2 {
+        font-size: 22px;
+    }
+
+    .pay-now {
+        font-size: 15px;
+        padding: 12px 18px;
+    }
+}
+
+/* 1024px - Tablets */
+@media (max-width: 1024px) {
+    .program-details h1 {
+        font-size: 28px;
+    }
+
+    .reviews h2,
+    .scientific-research h2,
+    .healing-procedure h2 {
+        font-size: 22px;
+    }
+
+    .pay-now {
+        font-size: 15px;
+        padding: 10px 18px;
+    }
+}
+
+/* 768px - Small Tablets */
+@media (max-width: 768px) {
+    .program-details {
+        padding: 30px 15px;
+    }
+
+    .program-details h1 {
+        font-size: 24px;
+    }
+
+    .columns {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .reviews,
+    .scientific-research,
+    .healing-procedure {
+        padding: 15px;
+        min-width: 100%;
+    }
+}
+
+/* 480px - Mobile Devices */
+@media (max-width: 480px) {
+    .program-details {
+        padding: 20px 10px;
+    }
+
+    .program-details h1 {
+        font-size: 22px;
+    }
+
+    .columns {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .reviews,
+    .scientific-research,
+    .healing-procedure {
+        min-width: 100%;
+    }
+
+    .pay-now {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
+
+/* 375px - Small Phones */
+@media (max-width: 375px) {
+    .program-details {
+        padding: 15px 10px;
+    }
+
+    .program-details h1 {
+        font-size: 20px;
+    }
+
+    .reviews,
+    .scientific-research,
+    .healing-procedure {
+        padding: 10px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    .columns {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .pay-now {
+        font-size: 13px;
+        padding: 8px 12px;
+    }
+}
+
+
+/* Client-Form Section */
+.client-form {
+    padding: 40px 30px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin: 20px auto; 
+    max-width: 800px; /* Updated for better scaling on larger screens */
+    position: relative; 
+    z-index: 1;
+    font-family: Arial, sans-serif; /* Ensure a uniform font style */
+}
+
+.client-form::before {
+    content: ''; 
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0;
+    background-image: url('./assets/Plantbased2Logo.jpg'); 
+    background-size: cover; /* Ensure proper coverage of the background image */
+    background-position: center; 
+    background-attachment: fixed;
+    z-index: 0; 
+    opacity: 0.2; 
+}
+
+.client-form h1 {
+    font-size: 28px; 
+    color: #333; 
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+.client-form p {
+    font-size: 14px; 
+    color: #666; 
+    text-align: center; 
+    margin-bottom: 20px;
+}
+
+.client-form form {
+    display: flex; 
+    flex-direction: column;
+    gap: 15px; 
+}
+
+.client-form input[type="text"],
+.client-form input[type="email"],
+.client-form input[type="number"],
+.client-form input[type="date"],
+.client-form select,
+.client-form textarea {
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    padding: 12px; 
+    font-size: 16px; 
+    width: 100%; 
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.client-form textarea {
+    resize: vertical; 
+    min-height: 100px; 
+}
+
+.client-form button {
+    background-color: #28a745; 
+    color: white; 
+    border: none; 
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer; 
+    font-size: 16px; 
+    transition: background-color 0.3s ease; 
+}
+
+.client-form button:hover {
+    background-color: #218838; 
+}
+
+/* Responsive Styles */
+
+/* 1024px - Tablets and small desktops */
+@media (max-width: 1024px) {
+    .client-form {
+        padding: 30px 20px;
+        max-width: 700px; /* Slightly narrower for tablets */
+    }
+    .client-form h1 {
+        font-size: 26px;
+    }
+    .client-form p {
+        font-size: 13px;
+    }
+    .client-form button {
+        font-size: 15px;
+    }
+}
+
+/* 768px - Tablets */
+@media (max-width: 768px) {
+    .client-form {
+        max-width: 600px;
+        padding: 25px 15px;
+    }
+    .client-form h1 {
+        font-size: 24px;
+    }
+    .client-form button {
+        font-size: 15px;
+        padding: 10px;
+    }
+}
+
+/* 480px - Small phones */
+@media (max-width: 480px) {
+    .client-form {
+        max-width: 100%; /* Full width for very small devices */
+        padding: 20px 10px;
+    }
+    .client-form h1 {
+        font-size: 22px;
+    }
+    .client-form p {
+        font-size: 12px;
+    }
+    .client-form button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+/* 375px - Very small phones */
+@media (max-width: 375px) {
+    .client-form {
+        padding: 20px;
+        margin: 10px auto;
+    }
+    .client-form h1 {
+        font-size: 20px;
+    }
+    .client-form p {
+        font-size: 12px;
+    }
+    .client-form button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+
+
