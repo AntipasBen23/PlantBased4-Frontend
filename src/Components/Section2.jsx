@@ -59,27 +59,37 @@ export default function Section2() {
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: 1, delay: 0.5 }}
             >
-                <h2 className="parr">Why Plantbased Nutrition Heals Your Body?</h2>
+                <h2 className="parr">✨THE FUTURE OF MEDICINE IS HERE: PLANTBASED NUTRITION AS HEALING✨</h2>
                 <motion.p
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 1, delay: 1 }}
                 >
-                    If you're tired of chronic diseases holding you back?
-                    <br /><br />
-                    Science proves that plant-based nutrition can be your cure!
-                    <br /> 🌱 <br />
-                    Chronic diseases don't stand a chance when you fuel your body with the right nutrients!
-                    <br /><br />
-                    💪🏽 Backed by science, a plant-based diet can help reverse heart disease, diabetes, high blood pressure, and more.
-                    <br /><br />
-                    Ditch processed foods and embrace nature’s pharmacy!
-                    <br /><br />
-                    🌿 Your health transformation starts now—because real healing begins with real food! 🍎🥦
-                    <br /><br />
-                    Want to Start a healthier, disease-free life?
-                    <br /><br />
-                    Click the link below to start a healing program.
+                    Did you know that food is medicine?<br /><br />
+
+                    🔬 <strong>The Evidence is Clear:</strong><br /><br />
+                   Groundbreaking research shows that proper nutrition can:<br /><br />    
+
+                   ✅ Reverse chronic conditions like Obesity, Diabetes, Cancers, High blood pressure and hypertension etc.<br /><br /> 
+ 
+                   ✅ Boost immune function<br /><br />    
+
+                   🩺 Meet the Experts Using Nutrition to Heal:<br /><br />
+                   <strong>- Dr. Michael Greger, MD</strong> – Author of <strong> How Not to Die,</strong> leveraging plant-based diets for chronic disease prevention.<br /><br />  
+
+                   <strong>- Dr. Mark Hyman, MD</strong> – Functional medicine pioneer, using food as medicine to fight aging and chronic illness.<br /><br />  
+
+                   <strong>🌱The right nutrition can heal your body, one meal at a time.</strong><br /><br />  
+
+                   💡 🌱 Choose A Healing Program &<br /> 
+                   Follow us for:<br />
+                   ✨ Expert insights<br />
+                   ✨ Healing recipes<br />
+                   ✨ Real success stories<br /><br />
+
+                   💚 Your body is designed to thrive. Start your journey today—because healing begins on your plate.<br /><br />
+
+                   Click the link below to start a healing program.<br /><br />
                 </motion.p>
                 <motion.div
                     whileHover={{ scale: 1.1 }}

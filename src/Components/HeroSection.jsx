@@ -27,8 +27,8 @@ export default function HeroSection() {
                 >
                     <div className="box">
                         <h1>
-                            <span className="primaryText">Heal all Chronic Diseases</span><br />
-                            <span className="highlightedText">With Nutrition</span>
+                            <span className="primaryText">HEAL ALL CHRONIC DISEASES</span><br />
+                            <span className="highlightedText">WITH NUTRITION</span>
                         </h1>
                     </div>
                     <div className="box">
@@ -51,6 +51,7 @@ export default function HeroSection() {
                                     <li>Obesity</li>
                                     <li>Diabetes</li>
                                     <li>High-blood Pressure</li>
+                                    <li>Athrithis</li>
                                 </ul>
                             </div>
                             <div className="list-section">
@@ -58,12 +59,13 @@ export default function HeroSection() {
                                     <li>Stroke</li>
                                     <li>Cancer</li>
                                     <li>Sickle-cell Anaemia</li>
+                                    <li>Gut issues</li>
                                 </ul>
                             </div>
                         </div>
                         <div className="enquiry-button">
                             <Link to="/enquiry-form" className="Btnvk" onClick={handleEnquiryClick}>
-                                {isEnquiryLoading ? <span className="loader"></span> : "MAKE AN ENQUIRY"}
+                                {isEnquiryLoading ? <span className="loader"></span> : "FREE BODY SCAN (WORTH ₦50,000)"}
                             </Link>
                         </div>
                     </div>

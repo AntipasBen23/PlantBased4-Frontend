@@ -24,7 +24,7 @@
   }
 
   h2{
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-family: 'Roboto', sans-serif;
  }
 
@@ -39,176 +39,179 @@
   }
 
  /* HeroSection */
-.wrapper {
+ .wrapper {
     position: fixed;
     width: 100%;
-    min-height: 100vh;
-    height: auto;
+    min-height: 100vh; 
     overflow: hidden;
+    height: auto;
 }
 
 .backgr {
     background-image: 
         linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), 
-        url(./assets/Plantbsd2bckggg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+        url(./assets/Plantbsd2bckggg.jpg); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    height: auto; 
+    padding: 50px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     justify-content: center;
-    padding: 5rem;
     position: relative;
-    min-height: 100vh;
 }
 
 .content {
-    z-index: 1;
-    position: relative;
-    margin-top: 0; /* Removed negative margins for better scalability */
-    text-align: center; /* Aligns content in the center */
+    padding-top: 10rem; 
+    z-index: 1; 
+    position: relative; 
+    margin-top: -8rem; 
 }
 
 .box {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    margin: 20px auto;
+    background-color: white; 
+    padding: 20px; 
+    border-radius: 8px; 
+    margin-bottom: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    width: 100%;
-    text-align: left;
+    max-width: 400px; 
+    width: 100%; 
+}
+
+.box .primaryText{
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.box .highlightedText{
+    font-size: 2rem;
+    font-weight: 800;
+    
+}
+
+.box .Paragrph{
+    font-weight: 600;
 }
 
 .flex-container {
-    display: flex;
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
-    justify-content: space-between;
-    gap: 20px;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
 }
 
 .list-section {
-    flex: 1;
+    flex: 1; 
     margin-right: 20px;
 }
 
 .list-section:last-child {
-    margin-right: 0;
+    margin-right: 0; 
 }
 
 .HeroList ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding: 0px;
 }
 
 .HeroList ul li {
-    color: #609a33;
+    color: #609a33; 
     font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
+    font-size: small;
     padding: 5px;
-}
-
-.box {
-    text-align: center; /* Center-aligns text and inline elements within .box */
+    font-weight: 800;
 }
 
 .box h1,
 .box p,
 .HeroList ul li {
-    color: #609a33;
-    list-style: none; /* Optional: removes default list styling */
-    text-align: center; /* Ensures text is centered in the list items */
-    margin: 0 auto; /* Centers list items if they have a specific width */
-}
-
-.HeroList ul {
-    padding: 0; /* Removes default padding */
-    margin: 0 auto; /* Centers the list itself */
-    display: inline-block; /* Makes the list behave like an inline element */
+    color: #609a33; 
 }
 
 .listContainer .Btnvk {
-    padding: 10px 15px;
+    padding: 9px 12px;
     background-color: #ffa200;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1rem;
-    font-weight: bold;
+    font-size: 13px;
+    font-weight: 700;
     transition: background-color 0.3s ease;
-    margin-top: 2rem;
+    margin-top: 10rem;
 }
-
 
 .enquiry-button {
     margin-top: 10px;
-    text-align: center;
+    margin-left: 2rem; 
 }
 
 .enquiry-button .Btnvk {
-    text-decoration: none;
-    display: inline-block;
+    text-decoration: none; 
 }
 
 .listContainer button:hover {
-    background-color: #e68a00;
+    background-color: #e68a00; 
 }
-
+ 
 .HeroDown {
-    margin: 2rem auto;
-    text-align: center;
+    margin-left: auto;
+    display: block;
+    margin-top: 4rem;
 }
 
 .RightTxt {
-    background-color: transparent;
-    color: #fff;
+    margin-top: -24rem; 
+    margin-left: auto; 
+    background-color: transparent; 
+    color: #fff; 
     font-size: 2rem;
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
-    text-align: center;
 }
 
-.HeroDown .btnRight {
-    padding: 15px 30px;
-    background-color: #7fb401;
-    color: #fff;
-    border: none;
+.HeroDown .btnRight { 
+    padding: 20px 50px; 
+    background-color: #7fb401; 
+    border-color: #7fb401; 
+    color: #fff; 
+    border: none; 
     border-radius: 35px;
-    cursor: pointer;
+    cursor: pointer; 
     font-size: 1.2rem;
     font-weight: bold;
-    transition: background-color 0.3s ease;
-    text-align: center;
-    display: inline-block;
+    transition: background-color 0.3s ease; 
+    background-image: url("./assets/buttonbk.png"); 
+    margin-left: 12rem; 
+    display: block; 
+    width: auto; 
+    text-align: center; 
+    position: relative;
     z-index: 10;
 }
 
-/* Make an Enquiry Button Hover */
-.listContainer .Btnvk:hover {
-    background-color: #e68a00; /* Darker orange */
-    transform: scale(1.05); /* Slight zoom effect */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    transition: all 0.3s ease-in-out; /* Smooth transition */
-}
-
-/* Click Here Button Hover */
-.HeroDown .btnRight:hover {
-    background-color: #6a9d01; /* Darker green */
-    transform: scale(1.05); /* Slight zoom effect */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    transition: all 0.3s ease-in-out; /* Smooth transition */
-}
-
-
 .RightTxt:hover {
-    color: #4a7e26;
+    color: #4a7e26; 
+}
+
+.loader {
+    border: 3px solid #f3f3f3; /* Light grey */
+    border-top: 3px solid #ffa200; /* Brand color */
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    animation: spin 1s linear infinite;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
 /* Responsive Styles */
-
 /* 1024px - Tablets and small desktops */
 @media (max-width: 1024px) {
     .backgr {
@@ -411,7 +414,7 @@ button[type="submit"] {
     border-radius: 25px;
     cursor: pointer;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 900;
     transition: all 0.3s ease;
     position: relative;
     z-index: 1;
@@ -422,8 +425,6 @@ button[type="submit"]:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-
-/* Responsive Styles */
 
 /* Large Screens (1440px) */
 @media (max-width: 1440px) {
@@ -499,7 +500,7 @@ button[type="submit"]:hover {
     button[type="submit"] {
         font-size: 13px;
         padding: 8px 14px;
-        width: 100%; /* Full width for buttons on smaller screens */
+        width: 100%; 
     }
 }
 
@@ -526,33 +527,30 @@ button[type="submit"]:hover {
 
  
 /* Section2 */
-.secondSection {
+ .secondSection {
     display: flex;
-    margin: 0 auto; /* Center section */
-    width: 100%; /* Ensure it spans full width */
-    max-width: 1440px;
-    padding: 0 50px;
     justify-content: space-between;
     align-items: center;
     padding: 50px;
     height: 100vh;
-    margin: 80px auto 100px;
-    flex-wrap: nowrap;
-}
+    margin-bottom: 10px;
+    margin-top: 19rem; 
+    margin-left: 5rem;
+} 
 
-/* Carousel Container */
 .carouselContainer {
     flex: 1;
     overflow: hidden;
     height: 100%;
-    width: 100%;
     position: relative;
-    margin-bottom: 2rem;
+    margin-bottom: 30rem;
+    margin-right: 5rem;
 }
 
 .imageSlider {
     display: flex;
-    transition: transform 1s cubic-bezier(0.25, 1, 0.5, 1);    width: 100%;
+    transition: transform 1s ease;
+    width: 100%;
     height: 100%;
 }
 
@@ -560,49 +558,40 @@ button[type="submit"]:hover {
     flex: 0 0 100%;
     height: 100%;
     object-fit: contain;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Content Section */
 .contentss {
     flex: 1;
-    text-align: left;
-    padding-left: 40px; /* Increased padding for better spacing */
 }
 
 .contentss .parr {
-    font-size: 2rem;
+    font-size: 1px;
     margin-bottom: 20px;
     color: #609a33;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    margin-left: 2rem;
+    font-weight: 900;
 }
 
 .contentss p {
-    font-size: 1.4rem;
-    line-height: 1.6;
-    color: #333;
+    font-size: 20rem;
+    margin-left: 2rem;
 }
-
 
 .S2Btn {
-    padding: 12px 24px;
-    font-size: 1.2rem;
-    background: linear-gradient(90deg, #609a33, #4a7e26);
+    padding: 20px 30px;
+    font-size: 20rem;
+    background-color: #609a33;
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 17px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    margin-left: 9rem;
+    margin-bottom: 2rem;
 }
 
-.S2Btn:hover {
-    background: linear-gradient(90deg, #4a7e26, #609a33);
-    transform: scale(1.05);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+button:hover {
+    background-color: #609a77;
 }
-
-/* Responsive Styles */
 
 /* 1440px - Large desktop screens */
 @media (max-width: 1440px) {
