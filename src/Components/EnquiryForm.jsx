@@ -45,7 +45,7 @@ const EnquiryForm = () => {
 
     return (
         <div className="enquiry-form-container">
-            <h1>Enquiry Form</h1>
+            <h1>Scan Form</h1>
             <form onSubmit={handleSubmit}>
                 <input
                     type="text"
