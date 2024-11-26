@@ -8,24 +8,51 @@
     scroll-behavior: smooth;
     max-width: 1440px;
     /* outline: red solid 1px; */
-  }
+}
+  @keyframes glow {
+    0% {
+        box-shadow: 0 0 10px #7fb401, 0 0 20px #7fb401, 0 0 30px #7fb401;
+    }
+    50% {
+        box-shadow: 0 0 20px #7fb401, 0 0 40px #7fb401, 0 0 60px #7fb401;
+    }
+    100% {
+        box-shadow: 0 0 10px #7fb401, 0 0 20px #7fb401, 0 0 30px #7fb401;
+    }
+}
 
+@keyframes shiny {
+    0% {
+        background: linear-gradient(120deg, #7fb401, #a3d203, #7fb401);
+        background-size: 200%;
+    }
+    50% {
+        background-position: 100% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
   /* General Fonts */
   h1{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 2rem;
     font-weight: bold;
   }
 
   li{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-
-  }
+}
 
   h2{
     font-size: 2rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
  }
 
   h3{
@@ -35,40 +62,33 @@
 
   p{
     font-size: 1.1rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'playfair', sans-serif;
   }
 
- /* HeroSection */
- .wrapper {
-    position: fixed;
-    width: 100%;
-    min-height: 100vh; 
+/* HeroSection */
+.hero-section {
+    width: 100dvw;
+    height: 100dvh;
+    padding: 50px;
     overflow: hidden;
-    height: auto;
-}
-
-.backgr {
+    position: relative;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: 1fr 1fr;
     background-image: 
         linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), 
         url(./assets/Plantbsd2bckggg.jpg); 
     background-size: cover; 
     background-repeat: no-repeat; 
     background-position: center; 
-    height: auto; 
-    padding: 50px;
+}
+.hero-section .box-container {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     justify-content: center;
-    position: relative;
+    align-items: center;
+    align-items: flex-start;
 }
-
-.content {
-    padding-top: 10rem; 
-    z-index: 1; 
-    position: relative; 
-    margin-top: -8rem; 
-}
-
 .box {
     background-color: white; 
     padding: 20px; 
@@ -76,45 +96,43 @@
     margin-bottom: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     max-width: 400px; 
-    width: 100%; 
+    width: 100%;
 }
-
 .box .primaryText{
     font-size: 2rem;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .box .highlightedText{
     font-size: 2rem;
-    font-weight: 800;
-    
+    font-weight: 700;   
 }
 
 .box .Paragrph{
-    font-weight: 600;
+    font-weight: 800;
 }
 
 .flex-container {
     display: flex; 
-    justify-content: space-between; 
+    justify-content:center; 
     align-items: flex-start; 
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 19px; 
+    width: 135%;
+    padding-bottom: 3.3rem;
 }
 
 .list-section {
     flex: 1; 
-    margin-right: 20px;
 }
 
-.list-section:last-child {
-    margin-right: 0; 
-}
-
-.HeroList ul {
+.list-section ul {
     list-style: none;
     padding: 0px;
 }
 
-.HeroList ul li {
+.list-section ul li {
     color: #609a33; 
     font-family: 'Roboto', sans-serif;
     font-size: small;
@@ -124,11 +142,16 @@
 
 .box h1,
 .box p,
-.HeroList ul li {
+.list-section ul li {
     color: #609a33; 
 }
 
-.listContainer .Btnvk {
+.enquiry-button {
+    margin-top: -2.4rem;
+    margin-left: 2rem; 
+}
+
+.enquiry-button .Btnvk {
     padding: 9px 12px;
     background-color: #ffa200;
     color: #fff;
@@ -138,62 +161,57 @@
     font-size: 13px;
     font-weight: 700;
     transition: background-color 0.3s ease;
-    margin-top: 10rem;
+    text-decoration: none;
 }
 
-.enquiry-button {
-    margin-top: 10px;
-    margin-left: 2rem; 
-}
-
-.enquiry-button .Btnvk {
-    text-decoration: none; 
-}
-
-.listContainer button:hover {
+.enquiry-button .Btnvk:hover {
     background-color: #e68a00; 
 }
- 
-.HeroDown {
-    margin-left: auto;
-    display: block;
-    margin-top: 4rem;
-}
 
-.RightTxt {
-    margin-top: -24rem; 
-    margin-left: auto; 
+.hero-section .cta-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+ 
+.cta-container .autoTypingText {
     background-color: transparent; 
     color: #fff; 
     font-size: 2rem;
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
+    line-height: 2.5rem;
 }
-
-.HeroDown .btnRight { 
+.cta-container .static-button {
+    animation: glow 1.5s infinite ease-in-out, shiny 3s infinite linear; 
     padding: 20px 50px; 
     background-color: #7fb401; 
     border-color: #7fb401; 
-    color: #fff; 
     border: none; 
     border-radius: 35px;
     cursor: pointer; 
-    font-size: 1.2rem;
-    font-weight: bold;
     transition: background-color 0.3s ease; 
     background-image: url("./assets/buttonbk.png"); 
-    margin-left: 12rem; 
     display: block; 
     width: auto; 
-    text-align: center; 
     position: relative;
     z-index: 10;
+}
+.cta-container .static-button:hover {
+    transform: scale(1.1); 
+}
+.cta-container .static-button a {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 .RightTxt:hover {
     color: #4a7e26; 
-}
+} 
 
 .loader {
     border: 3px solid #f3f3f3; /* Light grey */
@@ -205,116 +223,6 @@
     display: inline-block;
     vertical-align: middle;
 }
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
-/* Responsive Styles */
-/* 1024px - Tablets and small desktops */
-@media (max-width: 1024px) {
-    .backgr {
-        padding: 4rem 2rem;
-    }
-
-    .content {
-        text-align: center;
-        margin-top: 0;
-    }
-
-    .box {
-        max-width: 80%;
-    }
-
-    .HeroList ul li {
-        font-size: 1rem;
-    }
-
-    .HeroDown .btnRight {
-        padding: 12px 20px;
-        font-size: 1rem;
-    }
-
-    .RightTxt {
-        font-size: 1.8rem;
-    }
-}
-
-/* 768px - Small tablets */
-@media (max-width: 768px) {
-    .backgr {
-        padding: 3rem 1rem;
-    }
-
-    .box {
-        max-width: 90%;
-    }
-
-    .HeroList ul li {
-        font-size: 0.9rem;
-    }
-
-    .HeroDown .btnRight {
-        font-size: 0.9rem;
-        padding: 10px 15px;
-    }
-
-    .RightTxt {
-        font-size: 1.5rem;
-    }
-}
-
-/* 480px - Mobile devices */
-@media (max-width: 480px) {
-    .backgr {
-        padding: 2rem 1rem;
-    }
-
-    .box {
-        max-width: 95%;
-        padding: 15px;
-    }
-
-    .HeroList ul li {
-        font-size: 0.85rem;
-    }
-
-    .HeroDown .btnRight {
-        font-size: 0.85rem;
-        padding: 8px 12px;
-    }
-
-    .RightTxt {
-        font-size: 1.3rem;
-    }
-}
-
-/* 375px - Small mobile devices */
-@media (max-width: 375px) {
-    .backgr {
-        padding: 2rem 1rem;
-    }
-
-    .box {
-        max-width: 90%;
-        padding: 15px;
-    }
-
-    .HeroList ul li {
-        font-size: 0.8rem;
-    }
-
-    .HeroDown .btnRight {
-        font-size: 0.8rem;
-        padding: 8px 10px;
-    }
-
-    .RightTxt {
-        font-size: 1.2rem;
-    }
-}
-
 
 /* Enquiry Form */
 .enquiry-form-container {
@@ -527,220 +435,120 @@ button[type="submit"]:hover {
 
  
 /* Section2 */
- .secondSection {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px;
-    height: 100vh;
-    margin-bottom: 10px;
-    margin-top: 19rem; 
-    margin-left: 5rem;
-} 
+.secondSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    height: 80vh; /* Adjusted section height */
+    gap: 20px; /* Space between grid items */
+    padding: 20px; /* Padding around the section */
+    align-items: center; /* Vertically align items */
+    justify-items: center; /* Center items horizontally */
+    position: relative; /* Enable absolute positioning of child elements */
+}
 
 .carouselContainer {
-    flex: 1;
+    display: flex;
+    justify-content: center; /* Center the carousel horizontally */
+    align-items: center; /* Center the carousel vertically */
     overflow: hidden;
-    height: 100%;
     position: relative;
-    margin-bottom: 30rem;
-    margin-right: 5rem;
+    width: 50%; /* Adjust carousel width */
+    height: 90%; /* Adjust height to accommodate images */
+    position: relative;
+    top: -260px; /* Moves the carousel upward */
 }
 
 .imageSlider {
     display: flex;
-    transition: transform 1s ease;
-    width: 100%;
-    height: 100%;
+    transition: transform 1s ease-in-out; /* Smooth transition */
+    transform: translateX(var(--translateX)); /* Dynamic sliding */
 }
 
 .carouselImage {
-    flex: 0 0 100%;
-    height: 100%;
-    object-fit: contain;
+    flex: 0 0 100%; /* Show only one image at a time */
+    width: 100%; /* Adjusted image size */
+    height: auto; /* Ensure the image is not cropped */
+    object-fit: contain; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded edges */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add soft shadow */
 }
 
 .contentss {
-    flex: 1;
+    grid-column: 2; /* Content section on the right */
+    padding: 30px; /* Add padding to avoid text being too close to borders */
+    text-align: left;
 }
 
 .contentss .parr {
-    font-size: 1px;
-    margin-bottom: 20px;
+    font-size: 2.2rem; /* Larger font for emphasis */
+    font-weight: 800;
     color: #609a33;
-    margin-left: 2rem;
-    font-weight: 900;
+    margin-bottom: 20px; /* Add spacing below the heading */
 }
 
 .contentss p {
-    font-size: 20rem;
-    margin-left: 2rem;
+    font-size: 1.1rem; /* Adjust font size for readability */
+    line-height: 1.7; /* Increase line spacing for better readability */
+    margin-bottom: 20px; /* Add spacing between paragraphs */
+    color: #333; /* Use a softer black for text */
+}
+
+.S2BtnContainer {
+    display: flex;
+    justify-content:center; /* Align button to the right */
+    width: 100%; /* Ensure the container takes the full width */
 }
 
 .S2Btn {
-    padding: 20px 30px;
-    font-size: 20rem;
-    background-color: #609a33;
-    color: white;
+    position: relative; /* To enable pseudo-element positioning */
+    padding: 20px 50px; /* Adjusted for a more prominent button */
+    font-size: 1.2rem;
+    background-color: #7fb401;
+    border-color: #7fb401;
+    color: #fff;
     border: none;
-    border-radius: 17px;
+    border-radius: 35px; /* Rounded corners */
     cursor: pointer;
-    margin-left: 9rem;
-    margin-bottom: 2rem;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    overflow: hidden; /* Prevent overflow from pseudo-element */
+    animation: glow 2s infinite; /* Add glow animation */
 }
 
-button:hover {
-    background-color: #609a77;
+.S2Btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    transform: skewX(-45deg);
+    transition: all 0.3s ease;
 }
 
-/* 1440px - Large desktop screens */
-@media (max-width: 1440px) {
-    .secondSection {
-        max-width: 1200px;
-        padding: 50px;
-    }
-
-    .contentss .parr {
-        font-size: 1.8rem;
-    }
-
-    .contentss p {
-        font-size: 1.3rem;
-    }
-
-    .S2Btn {
-        padding: 10px 20px;
-        font-size: 1.1rem;
-    }
+.S2Btn:hover::before {
+    left: 125%; /* Move the shine effect */
+    transition: all 0.5s ease; /* Smooth transition */
 }
 
-/* 1024px - Tablets and smaller desktops */
-@media (max-width: 1024px) {
-    .secondSection {
-        padding: 40px;
-        margin-top: 60px;
-        flex-wrap: wrap;
-    }
-
-    .carouselContainer {
-        height: 400px;
-    }
-
-    .contentss {
-        padding-left: 0;
-        text-align: center;
-    }
-
-    .contentss .parr {
-        font-size: 1.6rem;
-    }
-
-    .contentss p {
-        font-size: 1.1rem;
-    }
-
-    .S2Btn {
-        padding: 9px 18px;
-        font-size: 0.95rem;
-    }
+.S2Btn:hover {
+    background-color: #4a7e26; /* Darker green on hover */
+    transform: scale(1.1); /* Slight scaling effect on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
 }
 
-/* 768px - Tablets */
-@media (max-width: 768px) {
-    .secondSection {
-        flex-direction: column;
-        padding: 30px 20px;
-        height: auto;
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px rgba(127, 180, 1, 0.5);
     }
-
-    .carouselContainer {
-        height: 300px;
-        margin-bottom: 1.5rem;
+    50% {
+        box-shadow: 0 0 20px rgba(127, 180, 1, 0.8);
     }
-
-    .imageSlider {
-        height: 100%;
-    }
-
-    .carouselImage {
-        height: auto;
-        object-fit: contain;
-    }
-
-    .contentss {
-        text-align: center;
-        margin-top: 20px;
-    }
-
-    .contentss .parr {
-        font-size: 1.4rem;
-    }
-
-    .contentss p {
-        font-size: 1rem;
-    }
-
-    .S2Btn {
-        padding: 8px 16px;
-        font-size: 0.9rem;
-    }
-}
-
-/* 480px - Small phones */
-@media (max-width: 480px) {
-    .secondSection {
-        padding: 20px;
-        height: auto;
-        margin: 50px auto;
-    }
-
-    .carouselContainer {
-        height: 250px;
-    }
-
-    .carouselImage {
-        height: 200px;
-    }
-
-    .contentss .parr {
-        font-size: 1.3rem;
-    }
-
-    .contentss p {
-        font-size: 0.9rem;
-    }
-
-    .S2Btn {
-        font-size: 0.85rem;
-        padding: 7px 14px;
-    }
-}
-
-/* 375px - Very small phones */
-@media (max-width: 375px) {
-    .secondSection {
-        padding: 15px;
-    }
-
-    .carouselContainer {
-        height: 200px;
-    }
-
-    .carouselImage {
-        height: 150px;
-    }
-
-    .contentss .parr {
-        font-size: 1.2rem;
-    }
-
-    .contentss p {
-        font-size: 0.85rem;
-    }
-
-    .S2Btn {
-        font-size: 0.8rem;
-        padding: 6px 12px;
+    100% {
+        box-shadow: 0 0 5px rgba(127, 180, 1, 0.5);
     }
 }
 

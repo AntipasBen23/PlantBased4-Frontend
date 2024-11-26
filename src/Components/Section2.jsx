@@ -15,8 +15,8 @@ export default function Section2() {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setCurrentImage((prevImage) => (prevImage + 1) % images.length);
-        }, 3000);
+            setCurrentImage((prevImage) => (prevImage + 1) % images.length); // Show one image at a time
+        }, 3000); // Adjust timing as needed
         return () => clearInterval(interval);
     }, [images.length]);
 
@@ -36,7 +36,7 @@ export default function Section2() {
             >
                 <div
                     className="imageSlider"
-                    style={{ transform: `translateX(-${currentImage * 100}%)` }}
+                    style={{ '--translateX': `-${currentImage * 100}%` }}
                 >
                     {images.map((image, index) => (
                         <motion.img
@@ -59,7 +59,7 @@ export default function Section2() {
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: 1, delay: 0.5 }}
             >
-                <h2 className="parr">✨THE FUTURE OF MEDICINE IS HERE: PLANTBASED NUTRITION AS HEALING✨</h2>
+                <h2 className="parr">PLANTBASED NUTRITION AS HEALING:</h2>
                 <motion.p
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
@@ -68,38 +68,39 @@ export default function Section2() {
                     Did you know that food is medicine?<br /><br />
 
                     🔬 <strong>The Evidence is Clear:</strong><br /><br />
-                   Groundbreaking research shows that proper nutrition can:<br /><br />    
+                    Groundbreaking research shows that proper nutrition can:<br /><br />
 
-                   ✅ Reverse chronic conditions like Obesity, Diabetes, Cancers, High blood pressure and hypertension etc.<br /><br /> 
- 
-                   ✅ Boost immune function<br /><br />    
+                    ✅ Reverse chronic conditions like Obesity, Diabetes, Cancers, High blood pressure, and hypertension etc.<br /><br />
 
-                   🩺 Meet the Experts Using Nutrition to Heal:<br /><br />
-                   <strong>- Dr. Michael Greger, MD</strong> – Author of <strong> How Not to Die,</strong> leveraging plant-based diets for chronic disease prevention.<br /><br />  
+                    ✅ Boost immune function<br /><br />
 
-                   <strong>- Dr. Mark Hyman, MD</strong> – Functional medicine pioneer, using food as medicine to fight aging and chronic illness.<br /><br />  
+                    🩺 Meet the Experts Using Nutrition to Heal:<br /><br />
+                    <strong>- Dr. Michael Greger, MD</strong> – Author of <strong>How Not to Die,</strong> leveraging plant-based diets for chronic disease prevention.<br /><br />
 
-                   <strong>🌱The right nutrition can heal your body, one meal at a time.</strong><br /><br />  
+                    <strong>- Dr. Mark Hyman, MD</strong> – Functional medicine pioneer, using food as medicine to fight aging and chronic illness.<br /><br />
 
-                   💡 🌱 Choose A Healing Program &<br /> 
-                   Follow us for:<br />
-                   ✨ Expert insights<br />
-                   ✨ Healing recipes<br />
-                   ✨ Real success stories<br /><br />
+                    <strong>🌱The right nutrition can heal your body, one meal at a time.</strong><br /><br />
 
-                   💚 Your body is designed to thrive. Start your journey today—because healing begins on your plate.<br /><br />
+                    💡 🌱 Choose A Healing Program &<br />
+                    Follow us for:<br />
+                    ✨ Expert insights<br />
+                    ✨ Healing recipes<br />
+                    ✨ Real success stories<br /><br />
 
-                   Click the link below to start a healing program.<br /><br />
+                    💚 Your body is designed to thrive. Start your journey today—because healing begins on your plate.<br /><br />
+
+                    Click the link below to start a healing program.<br /><br />
                 </motion.p>
                 <motion.div
-                    whileHover={{ scale: 1.1 }}
+                    className="S2BtnContainer"
                     whileTap={{ scale: 0.9 }}
                     transition={{ duration: 0.2 }}
                 >
-                    <Link to="/healing-programs">
+                    <Link to="/healing-programs" style={{ textDecoration: "none" }}>
                         <button className="S2Btn">Purchase Now</button>
                     </Link>
                 </motion.div>
+
             </motion.div>
         </motion.div>
     );
