@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap'); 
 
 
 * {
@@ -38,32 +38,26 @@
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
-  /* General Fonts */
-  h1{
-    font-family: 'Roboto', sans-serif;
-    font-size: 2rem;
-    font-weight: bold;
-  }
 
-  li{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
+h1{
+    font-family: 'Comorant', sans-serif;
 }
 
-  h2{
-    font-size: 2rem;
+h2{
+    font-family: 'Comorant', sans-serif;
+}
+
+h3{
+    font-family: 'Comorant', sans-serif;
+}
+
+li{
     font-family: 'Montserrat', sans-serif;
- }
+}
 
-  h3{
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
-  }
-
-  p{
-    font-size: 1.1rem;
-    font-family: 'playfair', sans-serif;
-  }
+p{
+    font-family: 'Montserrat', sans-serif;
+}
 
 /* HeroSection */
 .hero-section {
@@ -94,80 +88,59 @@
     padding: 20px; 
     border-radius: 8px; 
     margin-bottom: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     max-width: 400px; 
     width: 100%;
 }
-.box .primaryText{
-    font-size: 2rem;
-    font-weight: 700;
-}
-
-.box .highlightedText{
-    font-size: 2rem;
-    font-weight: 700;   
-}
-
-.box .Paragrph{
-    font-weight: 800;
-}
-
-.flex-container {
-    display: flex; 
-    justify-content:center; 
-    align-items: flex-start; 
-    background-color: #ffffff;
-    border-radius: 8px;
-    padding: 19px; 
-    width: 135%;
-    padding-bottom: 3.3rem;
-}
-
-.list-section {
-    flex: 1; 
-}
-
-.list-section ul {
-    list-style: none;
-    padding: 0px;
-}
-
-.list-section ul li {
-    color: #609a33; 
-    font-family: 'Roboto', sans-serif;
-    font-size: small;
-    padding: 5px;
-    font-weight: 800;
-}
-
-.box h1,
-.box p,
-.list-section ul li {
+.box h1 {
+    font-family: 'Comorant', sans-serif;
+    font-size: 32px;
+    text-transform: uppercase;
     color: #609a33; 
 }
-
-.enquiry-button {
-    margin-top: -2.4rem;
-    margin-left: 2rem; 
+.box p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #609a33; 
 }
-
-.enquiry-button .Btnvk {
-    padding: 9px 12px;
+.hero-section .list-container {
+    background-color: white; 
+    padding: 20px; 
+    border-radius: 8px; 
+    margin-bottom: 20px;
+    max-width: 400px; 
+    width: 100%;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+}
+.hero-section .list-container li {
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #609a33;
+}
+.hero-section .list-container button {
+    grid-column: 1 / -1;
+    padding: 20px 30px;
     background-color: #ffa200;
-    color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
     font-size: 13px;
     font-weight: 700;
     transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+.hero-section .list-container button a {
+    color: white;
     text-decoration: none;
 }
-
-.enquiry-button .Btnvk:hover {
+.hero-section .list-container button:hover {
     background-color: #e68a00; 
 }
-
 .hero-section .cta-container {
     display: flex;
     flex-direction: column;
@@ -175,7 +148,6 @@
     align-items: center;
     gap: 50px;
 }
- 
 .cta-container .autoTypingText {
     background-color: transparent; 
     color: #fff; 
@@ -208,11 +180,9 @@
     font-size: 1.2rem;
     font-weight: bold;
 }
-
 .RightTxt:hover {
     color: #4a7e26; 
 } 
-
 .loader {
     border: 3px solid #f3f3f3; /* Light grey */
     border-top: 3px solid #ffa200; /* Brand color */
@@ -223,6 +193,113 @@
     display: inline-block;
     vertical-align: middle;
 }
+
+/* Section2 */
+.second-section {
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+    padding: 50px; 
+    position: relative; 
+    padding-bottom: 40px;
+}
+.second-section .carousel-container {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 40%;
+    height: 90%;
+    position: relative;
+}
+.second-section .carousel-container .imageSlider {
+    display: flex;
+    transition: transform 1s ease-in-out; /* Smooth transition */
+    transform: translateX(var(--translateX)); /* Dynamic sliding */
+}
+.second-section .carousel-container .carouselImage {
+    flex: 0 0 100%; /* Show only one image at a time */
+    width: 100%; /* Adjusted image size */
+    height: auto; /* Ensure the image is not cropped */
+    object-fit: contain; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded edges */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add soft shadow */
+}
+.second-section .contentss {
+   width: 60%;
+   height: 100%;
+}
+.second-section .contentss .context-box {
+    width: 100%;
+    height: 50dvh;
+    overflow-y: scroll;
+}
+.contentss .parr {
+    font-size: 2.2rem; /* Larger font for emphasis */
+    font-weight: 800;
+    color: #609a33;
+    margin-bottom: 20px; /* Add spacing below the heading */
+}
+
+.contentss p {
+    font-size: 1.1rem; /* Adjust font size for readability */
+    line-height: 1.7; /* Increase line spacing for better readability */
+    margin-bottom: 20px; /* Add spacing between paragraphs */
+    color: #333; /* Use a softer black for text */
+}
+
+.S2BtnContainer {
+    display: flex;
+    justify-content:center; /* Align button to the right */
+    width: 100%; /* Ensure the container takes the full width */
+}
+
+.S2Btn {
+    position: relative; /* To enable pseudo-element positioning */
+    padding: 20px 50px; /* Adjusted for a more prominent button */
+    font-size: 1.2rem;
+    background-color: #7fb401;
+    border-color: #7fb401;
+    color: #fff;
+    border: none;
+    border-radius: 35px; /* Rounded corners */
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    overflow: hidden; /* Prevent overflow from pseudo-element */
+    animation: glow 2s infinite; /* Add glow animation */
+}
+
+.S2Btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    transform: skewX(-45deg);
+    transition: all 0.3s ease;
+}
+
+.S2Btn:hover::before {
+    left: 125%; /* Move the shine effect */
+    transition: all 0.5s ease; /* Smooth transition */
+}
+
+.S2Btn:hover {
+    background-color: #4a7e26; /* Darker green on hover */
+    transform: scale(1.1); /* Slight scaling effect on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+
+
 
 /* Enquiry Form */
 .enquiry-form-container {
@@ -434,111 +511,7 @@ button[type="submit"]:hover {
 }
 
  
-/* Section2 */
-.secondSection {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Two equal columns */
-    height: 80vh; /* Adjusted section height */
-    gap: 20px; /* Space between grid items */
-    padding: 20px; /* Padding around the section */
-    align-items: center; /* Vertically align items */
-    justify-items: center; /* Center items horizontally */
-    position: relative; /* Enable absolute positioning of child elements */
-}
 
-.carouselContainer {
-    display: flex;
-    justify-content: center; /* Center the carousel horizontally */
-    align-items: center; /* Center the carousel vertically */
-    overflow: hidden;
-    position: relative;
-    width: 50%; /* Adjust carousel width */
-    height: 90%; /* Adjust height to accommodate images */
-    position: relative;
-    top: -260px; /* Moves the carousel upward */
-}
-
-.imageSlider {
-    display: flex;
-    transition: transform 1s ease-in-out; /* Smooth transition */
-    transform: translateX(var(--translateX)); /* Dynamic sliding */
-}
-
-.carouselImage {
-    flex: 0 0 100%; /* Show only one image at a time */
-    width: 100%; /* Adjusted image size */
-    height: auto; /* Ensure the image is not cropped */
-    object-fit: contain; /* Maintain aspect ratio */
-    border-radius: 10px; /* Rounded edges */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add soft shadow */
-}
-
-.contentss {
-    grid-column: 2; /* Content section on the right */
-    padding: 30px; /* Add padding to avoid text being too close to borders */
-    text-align: left;
-}
-
-.contentss .parr {
-    font-size: 2.2rem; /* Larger font for emphasis */
-    font-weight: 800;
-    color: #609a33;
-    margin-bottom: 20px; /* Add spacing below the heading */
-}
-
-.contentss p {
-    font-size: 1.1rem; /* Adjust font size for readability */
-    line-height: 1.7; /* Increase line spacing for better readability */
-    margin-bottom: 20px; /* Add spacing between paragraphs */
-    color: #333; /* Use a softer black for text */
-}
-
-.S2BtnContainer {
-    display: flex;
-    justify-content:center; /* Align button to the right */
-    width: 100%; /* Ensure the container takes the full width */
-}
-
-.S2Btn {
-    position: relative; /* To enable pseudo-element positioning */
-    padding: 20px 50px; /* Adjusted for a more prominent button */
-    font-size: 1.2rem;
-    background-color: #7fb401;
-    border-color: #7fb401;
-    color: #fff;
-    border: none;
-    border-radius: 35px; /* Rounded corners */
-    cursor: pointer;
-    font-weight: bold;
-    text-align: center;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
-    overflow: hidden; /* Prevent overflow from pseudo-element */
-    animation: glow 2s infinite; /* Add glow animation */
-}
-
-.S2Btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -75%;
-    width: 50%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.5);
-    transform: skewX(-45deg);
-    transition: all 0.3s ease;
-}
-
-.S2Btn:hover::before {
-    left: 125%; /* Move the shine effect */
-    transition: all 0.5s ease; /* Smooth transition */
-}
-
-.S2Btn:hover {
-    background-color: #4a7e26; /* Darker green on hover */
-    transform: scale(1.1); /* Slight scaling effect on hover */
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
-}
 
 @keyframes glow {
     0% {

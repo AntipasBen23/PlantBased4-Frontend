@@ -27,12 +27,11 @@ export default function HeroSection() {
             >
                 <div className="box">
                     <h1>
-                        <span className="primaryText">HEAL ALL CHRONIC DISEASES</span><br />
-                        <span className="highlightedText">WITH NUTRITION</span>
+                        Heal all chronic diseases with nutrition
                     </h1>
                 </div>
                 <div className="box">
-                    <p className="Paragrph">
+                    <p>
                         Here are some of the key plant-based nutritional programs to consider for maintaining a healthy body.
                     </p>
                 </div>
@@ -44,31 +43,23 @@ export default function HeroSection() {
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.5, duration: 1 }}
                 >
-                    
-                        <div className="flex-container">
-                            <div className="list-section">
-                                <ul>
-                                    <li>Obesity</li>
-                                    <li>Diabetes</li>
-                                    <li>High-blood Pressure</li>
-                                    <li>Arthritis</li>
-                                </ul>
-                            </div>
-                            <div className="list-section">
-                                <ul>
-                                    <li>Stroke</li>
-                                    <li>Cancer</li>
-                                    <li>Sickle-cell Anaemia</li>
-                                    <li>Gut Issues</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="enquiry-button">
-                            <Link to="/enquiry-form" className="Btnvk" onClick={handleEnquiryClick}>
-                                {isEnquiryLoading ? <span className="loader"></span> : "FREE BODY SCAN (WORTH ₦50,000)"}
-                            </Link>
-                        </div>
-                    
+                    <ul>
+                        <li>Obesity</li>
+                        <li>Diabetes</li>
+                        <li>High-blood Pressure</li>
+                        <li>Arthritis</li>
+                    </ul>
+                    <ul>
+                        <li>Stroke</li>
+                        <li>Cancer</li>
+                        <li>Sickle-cell Anaemia</li>
+                        <li>Gut Issues</li>
+                    </ul>
+                    <button className="enquiry-button">
+                        <Link to="/enquiry-form" onClick={handleEnquiryClick}>
+                            {isEnquiryLoading ? <span className="loader"></span> : "FREE BODY SCAN (WORTH ₦50,000)"}
+                        </Link>
+                    </button>
                 </motion.div>
             </motion.div>
 

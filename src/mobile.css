@@ -1,4 +1,41 @@
 @media (max-width: 450px) {
+
+    
+    /* HeroSection */
+    .hero-section {
+        height: fit-content;
+        padding: 30px;
+        overflow: unset;
+        gap: 30px;
+        grid-template-columns: 1fr;
+    }
+    .box h1 {
+        font-size: 24px;
+    }
+    .box p {
+        font-size: 16px;
+    }
+    .hero-section .list-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+    }
+    .hero-section .list-container li {
+        font-size: 16px;
+    }
+    .hero-section .list-container button {
+        grid-column: 1 / -1;
+        padding: 20px 30px;
+        background-color: #ffa200;
+        font-size: 12px;
+    }
+
+    .hero-section .cta-container {
+        gap: 30px;
+    }
+    .cta-container .autoTypingText {
+        font-size: 18px;
+    }
+
     .secondSection {
         display: grid;
         grid-template-columns: 1fr; /* Single column layout */
