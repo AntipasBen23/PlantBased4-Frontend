@@ -15,8 +15,8 @@ export default function Section2() {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setCurrentImage((prevImage) => (prevImage + 1) % images.length); // Show one image at a time
-        }, 3000); // Adjust timing as needed
+            setCurrentImage((prevImage) => (prevImage + 1) % images.length);
+        }, 3000);
         return () => clearInterval(interval);
     }, [images.length]);
 
@@ -36,7 +36,7 @@ export default function Section2() {
             >
                 <div
                     className="imageSlider"
-                    style={{ '--translateX': `-${currentImage * 100}%` }}
+                    style={{ transform: `translateX(-${currentImage * 100}%)` }}
                 >
                     {images.map((image, index) => (
                         <motion.img
@@ -71,24 +71,19 @@ export default function Section2() {
                     Groundbreaking research shows that proper nutrition can:<br /><br />
 
                     ✅ Reverse chronic conditions like Obesity, Diabetes, Cancers, High blood pressure, and hypertension etc.<br /><br />
-
                     ✅ Boost immune function<br /><br />
 
                     🩺 Meet the Experts Using Nutrition to Heal:<br /><br />
                     <strong>- Dr. Michael Greger, MD</strong> – Author of <strong>How Not to Die,</strong> leveraging plant-based diets for chronic disease prevention.<br /><br />
-
                     <strong>- Dr. Mark Hyman, MD</strong> – Functional medicine pioneer, using food as medicine to fight aging and chronic illness.<br /><br />
 
                     <strong>🌱The right nutrition can heal your body, one meal at a time.</strong><br /><br />
-
                     💡 🌱 Choose A Healing Program &<br />
                     Follow us for:<br />
                     ✨ Expert insights<br />
                     ✨ Healing recipes<br />
                     ✨ Real success stories<br /><br />
-
                     💚 Your body is designed to thrive. Start your journey today—because healing begins on your plate.<br /><br />
-
                     Click the link below to start a healing program.<br /><br />
                 </motion.p>
                 <motion.div
@@ -100,7 +95,6 @@ export default function Section2() {
                         <button className="S2Btn">Purchase Now</button>
                     </Link>
                 </motion.div>
-
             </motion.div>
         </motion.div>
     );
