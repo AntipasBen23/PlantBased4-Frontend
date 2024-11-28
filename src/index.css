@@ -436,221 +436,119 @@ button[type="submit"]:hover {
  
 /* Section2 */
 .secondSection {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px;
-    height: 100vh;
-    margin-bottom: 100px;
-    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    height: 80vh; /* Adjusted section height */
+    gap: 20px; /* Space between grid items */
+    padding: 20px; /* Padding around the section */
+    align-items: center; /* Vertically align items */
+    justify-items: center; /* Center items horizontally */
+    position: relative; /* Enable absolute positioning of child elements */
 }
 
 .carouselContainer {
-    flex: 1;
+    display: flex;
+    justify-content: center; /* Center the carousel horizontally */
+    align-items: center; /* Center the carousel vertically */
     overflow: hidden;
-    height: 100%;
     position: relative;
-    margin-bottom: 2rem;
+    width: 50%; /* Adjust carousel width */
+    height: 90%; /* Adjust height to accommodate images */
+    position: relative;
+    top: -260px; /* Moves the carousel upward */
 }
 
 .imageSlider {
     display: flex;
-    transition: transform 1s ease;
-    width: 100%;
-    height: 100%;
+    transition: transform 1s ease-in-out; /* Smooth transition */
+    transform: translateX(var(--translateX)); /* Dynamic sliding */
 }
 
 .carouselImage {
-    flex: 0 0 100%;
-    height: 100%;
-    object-fit: contain;
+    flex: 0 0 100%; /* Show only one image at a time */
+    width: 100%; /* Adjusted image size */
+    height: auto; /* Ensure the image is not cropped */
+    object-fit: contain; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded edges */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add soft shadow */
 }
 
 .contentss {
-    flex: 1;
+    grid-column: 2; /* Content section on the right */
+    padding: 30px; /* Add padding to avoid text being too close to borders */
     text-align: left;
 }
 
 .contentss .parr {
-    font-size: 1.7rem;
-    margin-bottom: 20px;
+    font-size: 2.2rem; /* Larger font for emphasis */
+    font-weight: 800;
     color: #609a33;
+    margin-bottom: 20px; /* Add spacing below the heading */
 }
 
 .contentss p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
+    font-size: 1.1rem; /* Adjust font size for readability */
+    line-height: 1.7; /* Increase line spacing for better readability */
+    margin-bottom: 20px; /* Add spacing between paragraphs */
+    color: #333; /* Use a softer black for text */
+}
+
+.S2BtnContainer {
+    display: flex;
+    justify-content:center; /* Align button to the right */
+    width: 100%; /* Ensure the container takes the full width */
 }
 
 .S2Btn {
-    padding: 10px 20px;
-    font-size: 1rem;
-    background-color: #609a33;
-    color: white;
+    position: relative; /* To enable pseudo-element positioning */
+    padding: 20px 50px; /* Adjusted for a more prominent button */
+    font-size: 1.2rem;
+    background-color: #7fb401;
+    border-color: #7fb401;
+    color: #fff;
     border: none;
-    border-radius: 8px;
+    border-radius: 35px; /* Rounded corners */
     cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    overflow: hidden; /* Prevent overflow from pseudo-element */
+    animation: glow 2s infinite; /* Add glow animation */
 }
 
-button:hover {
-    background-color: #609a77;
+.S2Btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    transform: skewX(-45deg);
+    transition: all 0.3s ease;
 }
 
-/*1024px*/
-@media (max-width: 1024px) {
-    .secondSection {
-        padding: 40px;
-        margin-top: 60px;
-    }
-
-    .carouselContainer {
-        height: 400px;
-    }
-
-    .contentss .parr {
-        font-size: 1.6rem;
-    }
-
-    .contentss p {
-        font-size: 1.1rem;
-    }
-
-    .S2Btn {
-        padding: 9px 18px;
-        font-size: 0.95rem;
-    }
+.S2Btn:hover::before {
+    left: 125%; /* Move the shine effect */
+    transition: all 0.5s ease; /* Smooth transition */
 }
 
-/*768px*/
-@media (max-width: 768px) {
-    .secondSection {
-        padding: 15px;
-    }
-    
-    .carouselContainer {
-        flex: 1;
-        overflow: hidden;
-        height: 50%;
-        position: relative;
-        margin-bottom: 2rem;
-    }
-    
-    .imageSlider {
-        display: flex;
-        transition: transform 1s ease;
-        width: 100%;
-        height: 100%;
-    }
-    
-    .carouselImage {
-        width: 100%;
-        height: 25rem;
-        max-height: 100%;
-        object-fit: contain;
-    }
-
-    .contentss {
-        margin: -20px;
-    } 
-    
-    .contentss .parr {
-        font-size: 1.3rem;
-    }
-    
-    .contentss p {
-        font-size: 0.9rem;
-    }
-    
-    .S2Btn {
-        font-size: 0.85rem;
-    }
+.S2Btn:hover {
+    background-color: #4a7e26; /* Darker green on hover */
+    transform: scale(1.1); /* Slight scaling effect on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
 }
 
-/*425px*/
-@media (max-width: 425px) {
-    .secondSection {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        padding: 50px;
-        height: 100vh;
-        margin-bottom: 100px;
-        margin-top: 80px;
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px rgba(127, 180, 1, 0.5);
     }
-    
-    .carouselContainer {
-        flex: 1;
-        overflow: hidden;
-        height: 50%;
-        position: relative;
-        margin-bottom: 10rem;
+    50% {
+        box-shadow: 0 0 20px rgba(127, 180, 1, 0.8);
     }
-
-    .imageSlider {
-        display: flex;
-        transition: transform 1s ease;
-        width: 100%;
-        height: 100%;
-    }
-
-    .carouselImage {
-        width: 100%;
-        height: 2rem;
-        max-height: 100%;
-        object-fit: contain;
-    }
-
-    .contentss .parr {
-        font-size: 1.3rem;
-    }
-
-    .contentss p {
-        font-size: 0.9rem;
-    }
-
-    .S2Btn {
-        font-size: 0.85rem;
-    }
-}
-
-@media (max-width: 375px) {
-    .secondSection {
-        padding: 15px;
-    }
-
-    .carouselContainer {
-        flex: 1;
-        overflow: hidden;
-        height: 50%;
-        position: relative;
-        margin-bottom: 2rem;
-    }
-
-    .imageSlider {
-        display: flex;
-        transition: transform 1s ease;
-        width: 100%;
-        height: 100%;
-    }
-
-    .carouselImage {
-        width: 100%;
-        height: 25rem;
-        max-height: 100%;
-        object-fit: contain;
-    }
-
-    .contentss .parr {
-        font-size: 1.3rem;
-    }
-
-    .contentss p {
-        font-size: 0.9rem;
-    }
-
-    .S2Btn {
-        font-size: 0.85rem;
+    100% {
+        box-shadow: 0 0 5px rgba(127, 180, 1, 0.5);
     }
 }
 
