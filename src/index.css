@@ -45,6 +45,7 @@ h1{
 
 h2{
     font-family: 'Comorant', sans-serif;
+    color: #609a33;
 }
 
 h3{
@@ -226,7 +227,6 @@ p{
     height: auto; /* Ensure the image is not cropped */
     object-fit: contain; /* Maintain aspect ratio */
     border-radius: 10px; /* Rounded edges */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add soft shadow */
 }
 .second-section .contentss {
    width: 60%;
