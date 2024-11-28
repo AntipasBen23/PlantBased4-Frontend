@@ -298,9 +298,6 @@ p{
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
 }
 
-
-
-
 /* Enquiry Form */
 .enquiry-form-container {
     position: relative;
@@ -509,22 +506,6 @@ button[type="submit"]:hover {
         padding: 8px 10px;
     }
 }
-
- 
-
-
-@keyframes glow {
-    0% {
-        box-shadow: 0 0 5px rgba(127, 180, 1, 0.5);
-    }
-    50% {
-        box-shadow: 0 0 20px rgba(127, 180, 1, 0.8);
-    }
-    100% {
-        box-shadow: 0 0 5px rgba(127, 180, 1, 0.5);
-    }
-}
-
 
 /* Healing-Programs Section */
 .healing-progrs {
