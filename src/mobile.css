@@ -1,0 +1,97 @@
+/* Base styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.secondSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.carouselContainer {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.imageSlider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(var(--translateX, 0));
+}
+
+.carouselImage {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.contentss {
+    text-align: center;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.contentss h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.contentss p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.S2BtnContainer {
+    margin-top: 20px;
+}
+
+.S2Btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.S2Btn:hover {
+    background-color: #218838;
+}
+
+/* Responsive styles */
+@media (max-width: 450px) {
+    .carouselContainer {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .contentss {
+        padding: 15px;
+    }
+
+    .contentss h2 {
+        font-size: 1.5rem;
+    }
+
+    .contentss p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
+    .S2Btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
