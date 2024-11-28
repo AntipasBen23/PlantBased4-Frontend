@@ -22,14 +22,14 @@ export default function Section2() {
 
     return (
         <motion.div
-            className="secondSection"
+            className="second-section"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
         >
             {/* Carousel */}
             <motion.div
-                className="carouselContainer"
+                className="carousel-container"
                 initial={{ x: -50, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: 1, delay: 0.3 }}
@@ -59,38 +59,40 @@ export default function Section2() {
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: 1, delay: 0.5 }}
             >
-                <h2 className="parr">PLANTBASED NUTRITION AS HEALING:</h2>
-                <motion.p
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 1, delay: 1 }}
-                >
-                    Did you know that food is medicine?<br /><br />
+                <div className="content-box">
+                    <h2>PLANTBASED NUTRITION AS HEALING:</h2>
+                    <motion.p
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 1, delay: 1 }}
+                    >
+                        Did you know that food is medicine?<br /><br />
 
-                    🔬 <strong>The Evidence is Clear:</strong><br /><br />
-                    Groundbreaking research shows that proper nutrition can:<br /><br />
+                        🔬 <strong>The Evidence is Clear:</strong><br /><br />
+                        Groundbreaking research shows that proper nutrition can:<br /><br />
 
-                    ✅ Reverse chronic conditions like Obesity, Diabetes, Cancers, High blood pressure, and hypertension etc.<br /><br />
+                        ✅ Reverse chronic conditions like Obesity, Diabetes, Cancers, High blood pressure, and hypertension etc.<br /><br />
 
-                    ✅ Boost immune function<br /><br />
+                        ✅ Boost immune function<br /><br />
 
-                    🩺 Meet the Experts Using Nutrition to Heal:<br /><br />
-                    <strong>- Dr. Michael Greger, MD</strong> – Author of <strong>How Not to Die,</strong> leveraging plant-based diets for chronic disease prevention.<br /><br />
+                        🩺 Meet the Experts Using Nutrition to Heal:<br /><br />
+                        <strong>- Dr. Michael Greger, MD</strong> – Author of <strong>How Not to Die,</strong> leveraging plant-based diets for chronic disease prevention.<br /><br />
 
-                    <strong>- Dr. Mark Hyman, MD</strong> – Functional medicine pioneer, using food as medicine to fight aging and chronic illness.<br /><br />
+                        <strong>- Dr. Mark Hyman, MD</strong> – Functional medicine pioneer, using food as medicine to fight aging and chronic illness.<br /><br />
 
-                    <strong>🌱The right nutrition can heal your body, one meal at a time.</strong><br /><br />
+                        <strong>🌱The right nutrition can heal your body, one meal at a time.</strong><br /><br />
 
-                    💡 🌱 Choose A Healing Program &<br />
-                    Follow us for:<br />
-                    ✨ Expert insights<br />
-                    ✨ Healing recipes<br />
-                    ✨ Real success stories<br /><br />
+                        💡 🌱 Choose A Healing Program &<br />
+                        Follow us for:<br />
+                        ✨ Expert insights<br />
+                        ✨ Healing recipes<br />
+                        ✨ Real success stories<br /><br />
 
-                    💚 Your body is designed to thrive. Start your journey today—because healing begins on your plate.<br /><br />
+                        💚 Your body is designed to thrive. Start your journey today—because healing begins on your plate.<br /><br />
 
-                    Click the link below to start a healing program.<br /><br />
-                </motion.p>
+                        Click the link below to start a healing program.<br /><br />
+                    </motion.p>
+               </div>
                 <motion.div
                     className="S2BtnContainer"
                     whileTap={{ scale: 0.9 }}
@@ -100,7 +102,6 @@ export default function Section2() {
                         <button className="S2Btn">Purchase Now</button>
                     </Link>
                 </motion.div>
-
             </motion.div>
         </motion.div>
     );
