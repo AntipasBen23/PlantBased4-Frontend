@@ -75,3 +75,50 @@
         box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
     }
 }
+
+@media (max-width: 450px) {
+    .secondSection {
+        flex-direction: column;
+        padding: 20px 10px;
+        height: auto;
+        margin: 40px auto;
+    }
+
+    .carouselContainer {
+        height: 220px;
+        margin-bottom: 1rem;
+    }
+
+    .imageSlider {
+        height: 100%;
+    }
+
+    .carouselImage {
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .contentss {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .contentss .parr {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+
+    .contentss p {
+        font-size: 0.85rem;
+        line-height: 1.4;
+        margin-left: 0; /* Center text */
+        margin-right: 0; /* Center text */
+    }
+
+    .S2Btn {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+        margin: 20px auto;
+        display: block; /* Center button */
+    }
+}
