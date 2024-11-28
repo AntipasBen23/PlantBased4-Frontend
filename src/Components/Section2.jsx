@@ -21,36 +21,22 @@ export default function Section2() {
     }, [images.length]);
 
     return (
-        <motion.div
-            className="secondSection"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-        >
-            {/* Carousel */}
-            <motion.div
-                className="carouselContainer"
-                initial={{ x: -50, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 1, delay: 0.3 }}
-            >
+        <div className="secondSection">
+            <div className="carouselContainer">
                 <div
                     className="imageSlider"
-                    style={{ '--translateX': `-${currentImage * 100}%` }}
+                    style={{ transform: `translateX(-${currentImage * 100}%)` }}
                 >
                     {images.map((image, index) => (
-                        <motion.img
+                        <img
                             key={index}
                             src={image}
                             alt={`Slide ${index}`}
                             className="carouselImage"
-                            initial={{ scale: 0.8, opacity: 0 }}
-                            animate={{ scale: 1, opacity: 1 }}
-                            transition={{ duration: 0.5, delay: index * 0.2 }}
                         />
                     ))}
                 </div>
-            </motion.div>
+            </div>
 
             {/* Content Section */}
             <motion.div
