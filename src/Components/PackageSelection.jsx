@@ -326,7 +326,7 @@ const PackageSelection = () => {
                     }
                 },
                 customClass: {
-                    input: 'custom-swal-input', // Custom class for the input field
+                    input: 'custom-swal-input',
                 },
             });
             
@@ -380,31 +380,59 @@ const PackageSelection = () => {
     };
 
     return (
-        <section id="packagesSection" className="productCart">
-            <h2 className="heading">{programName} Packages</h2>
-            <div className="productGrid">
-                {Object.entries(selectedPackages).map(([key, { title, price, description, imgSrc, features }]) => (
-                    <div key={key} className="productCard">
-                        <img src={imgSrc} alt={title} className="productImage" />
-                        <h3 className="productName">{title}</h3>
-                        <p className="productDescription">{description}</p>
-                        <ul className="featureList">
-                            {features.map((feature, index) => (
-                                <li key={index} className="featureItem">{feature}</li>
-                            ))}
-                        </ul>
-                        <span className="price">₦{(price / 100).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span>
-                        <br /><button 
-                            className="ctaButton"
-                            onClick={() => handleBuyNow(title, price)}
-                        >
-                            Buy Now
-                        </button>
-                    </div>
-                ))}
-            </div>
-        </section>
-    );
+      <section
+        id='packagesSection'
+        className='w-full min-h-screen flex justify-center bg-[#f3f6ea]'
+      >
+        <div className='w-full lg:w-3/4 p-4 lg:p-8'>
+          <h2 className='text-[#609a33] text-center text-2xl md:text-3xl lg:text-4xl'>
+            {programName} Packages
+          </h2>
+          <div className='w-full mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8'>
+            {Object.entries(selectedPackages).map(
+              ([key, { title, price, description, imgSrc, features }]) => (
+                <div
+                  key={key}
+                  className='bg-[#cbe8e1] p-4 lg:p-6 rounded shadow-md md:hover:scale-105 transition-all duration-300 ease-linear'
+                >
+                  <div className='w-full flex justify-center'>
+                    <img
+                      src={imgSrc}
+                      alt={title}
+                      className='productImag w-[150px] h-[150px] rounded-full'
+                    />
+                  </div>
+                  <h3 className='productName mt-4'>{title}</h3>
+                  <p className='productDescription'>{description}</p>
+                  <ul className='featureList'>
+                    {features.map((feature, index) => (
+                      <li key={index} className='featureItem'>
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+                  <span className='price'>
+                    ₦
+                    {(price / 100).toLocaleString('en-US', {
+                      minimumFractionDigits: 2,
+                      maximumFractionDigits: 2,
+                    })}
+                  </span>
+                  <div className='w-full lg:flex justify-center mt-6'>
+                    <button
+                      className='ctaButton w-full'
+                      onClick={() => handleBuyNow(title, price)}
+                    >
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+              )
+            )}
+          </div>
+        </div>
+      </section>
+    )
 };
 
 export default PackageSelection;

@@ -29,10 +29,11 @@ const ClientForm = () => {
         const { name, value } = e.target;
         setFormData((prevData) => ({ ...prevData, [name]: value }));
     };
+    const [loading, setLoading] = useState(false)
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-
+        setLoading(true)
         if (formData.age < 1 || formData.age > 120) {
             Swal.fire({
                 icon: 'error',
@@ -42,6 +43,7 @@ const ClientForm = () => {
                 color: '#fff',
                 confirmButtonColor: '#609a33',
             });
+            setLoading(false)
             return;
         }
 
@@ -54,6 +56,7 @@ const ClientForm = () => {
                 color: '#fff',
                 confirmButtonColor: '#609a33',
             });
+            setLoading(false)
             return;
         }
 
@@ -82,77 +85,157 @@ const ClientForm = () => {
                 color: '#fff',
                 confirmButtonColor: '#609a33',
             });
+        } finally {
+            setLoading(false)
         }
     };
 
     return (
-        <motion.div
-            className="client-form"
-            initial={{ opacity: 0, y: -30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-        >
-            <h1>Confidential Client Form</h1>
-            <p>(We won't use your data for anything other than healing.)</p>
-            <form onSubmit={handleSubmit}>
-                {[
-                    { name: 'name', type: 'text', placeholder: 'Enter your name' },
-                    { name: 'location', type: 'text', placeholder: 'Enter your location' },
-                    { name: 'email', type: 'email', placeholder: 'Enter your email' },
-                    { name: 'whatsapp', type: 'text', placeholder: 'Enter your WhatsApp number' },
-                    { name: 'age', type: 'number', placeholder: 'Enter your age' },
-                    { name: 'maritalStatus', type: 'text', placeholder: 'Enter your marital status' },
-                    { name: 'numChildren', type: 'number', placeholder: 'Number of children' },
-                    { name: 'height', type: 'text', placeholder: 'Enter your height' },
-                    { name: 'weight', type: 'text', placeholder: 'Enter your weight' },
-                ].map((field, index) => (
-                    <motion.input
-                        key={index}
-                        type={field.type}
-                        name={field.name}
-                        value={formData[field.name]}
-                        onChange={handleChange}
-                        placeholder={field.placeholder}
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ delay: index * 0.1 }}
-                    />
-                ))}
-                {[
-                    { name: 'healthHistory', placeholder: 'Enter your health history' },
-                    { name: 'symptoms', placeholder: 'Describe your symptoms' },
-                    { name: 'prescriptionDrugs', placeholder: 'List any prescription drugs' },
-                    { name: 'healthGoal', placeholder: 'Describe your health goal' },
-                ].map((field, index) => (
-                    <motion.textarea
-                        key={index}
-                        name={field.name}
-                        value={formData[field.name]}
-                        onChange={handleChange}
-                        placeholder={field.placeholder}
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ delay: index * 0.1 }}
-                    />
-                ))}
-                <label htmlFor="intendedStartDate">Date of Diagnosis</label>
+      <div className='w-full overflow-x-hiddenh-auto lg:min-h-screen bg-transparent lg:bg-white p-0 md:p-6 lg:p-10 flex justify-center '>
+        <div className='w-[89%] h-full md:h-auto md:w-[95%] lg:w-2/3 xl:w-1/2 md:rounded-lg md:shadow-[0px_2px_10px_rgba(0,0,0,0.2),0px_-2px_10px_rgba(0,0,0,0.2)] md:border border-[#ededed] text-[#333] overflow-hidden  bg-cover bg-center bg-no-repeat bg-[url(./assets/Plantbased2Logo.jpg)]'>
+          <div className='w-full h-full bg-[#f9f9f9] md:bg-opacity-95 py-8 mx-auto p-5 flex flex-col md:block'>
+            <h1 className='text-center text-base font-bold md:text-2xl'>
+              Confidential Client Form
+            </h1>
+            <p className='mt-2 text-center text-base md:text-lg'>
+              (We won't use your data for anything other than healing.)
+            </p>
+            <form onSubmit={handleSubmit} className='mt-4 md:mt-6'>
+              <div className='flex flex-col md:flex-row md:items-center md:space-x-8'>
                 <input
-                    type="date"
-                    id="intendedStartDate"
-                    name="intendedStartDate"
-                    value={formData.intendedStartDate}
-                    onChange={handleChange}
+                  type='text'
+                  name='name'
+                  value={formData.name}
+                  onChange={handleChange}
+                  placeholder='Enter your name'
                 />
-                <motion.button
-                    type="submit"
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.9 }}
+                <input
+                  type='text'
+                  name='location'
+                  value={formData.location}
+                  onChange={handleChange}
+                  placeholder='Enter your location'
+                />
+              </div>
+              <div className='flex flex-col md:flex-row md:items-center md:space-x-8'>
+                <input
+                  type='email'
+                  name='email'
+                  value={formData.email}
+                  onChange={handleChange}
+                  placeholder='Enter your email'
+                />
+                <input
+                  type='text'
+                  name='whatsapp'
+                  value={formData.whatsapp}
+                  onChange={handleChange}
+                  placeholder='Enter your WhatsApp number'
+                />
+              </div>
+              <div className='flex flex-col md:flex-row md:items-center md:space-x-8'>
+                <input
+                  type='number'
+                  name='age'
+                  value={formData.age}
+                  onChange={handleChange}
+                  placeholder='Enter your age'
+                />
+                <input
+                  type='text'
+                  name='maritalStatus'
+                  value={formData.maritalStatus}
+                  onChange={handleChange}
+                  placeholder='Enter your marital status'
+                />
+              </div>
+              <div className='flex flex-col md:flex-row md:items-center md:space-x-8'>
+                <input
+                  type='number'
+                  name='numChildren'
+                  value={formData.numChildren}
+                  onChange={handleChange}
+                  placeholder='Number of children'
+                />
+                <input
+                  type='text'
+                  name='height'
+                  value={formData.height}
+                  onChange={handleChange}
+                  placeholder='Enter your height'
+                />
+              </div>
+              <div className='flex flex-col md:flex-row md:items-center md:space-x-8'>
+                <input
+                  type='text'
+                  name='weight'
+                  value={formData.weight}
+                  onChange={handleChange}
+                  placeholder='Enter your weight'
+                />
+                <textarea
+                  name='healthHistory'
+                  value={formData.healthHistory}
+                  onChange={handleChange}
+                  placeholder='Enter your health history'
+                />
+              </div>
+              <div className='flex flex-col md:flex-row md:items-center md:space-x-8'>
+                <textarea
+                  name='symptoms'
+                  value={formData.symptoms}
+                  onChange={handleChange}
+                  placeholder='Describe your symptoms'
+                />
+                <textarea
+                  name='prescriptionDrugs'
+                  value={formData.prescriptionDrugs}
+                  onChange={handleChange}
+                  placeholder='List any prescription drugs'
+                />
+              </div>
+
+              <textarea
+                name='healthGoal'
+                value={formData.healthGoal}
+                onChange={handleChange}
+                placeholder='Describe your health goal'
+              />
+              <div>
+                <label htmlFor='intendedStartDate block mb-2'>
+                  Date of Diagnosis
+                </label>
+                <input
+                  type='date'
+                  id='intendedStartDate'
+                  name='intendedStartDate'
+                  value={formData.intendedStartDate}
+                  onChange={handleChange}
+                  placeholder='Intended start date'
+                />
+              </div>
+              <div className='w-full flex justify-center mt-4'>
+                <button
+                  type='submit'
+                  className={`w-full md:w-1/2 px-4 py-3 flex items-center justify-center ${
+                    loading
+                      ? 'cursor-not-allowed bg-gray-500'
+                      : 'hover:bg-[#4a7e26] bg-[#609a33]'
+                  } text-white font-bold py-2 px-4 rounded`}
+                  disabled={loading}
                 >
-                    Submit
-                </motion.button>
+                  {loading ? (
+                    <span className='loader'></span>
+                  ) : (
+                    <span>Submit</span>
+                  )}
+                </button>
+              </div>
             </form>
-        </motion.div>
-    );
+          </div>
+        </div>
+      </div>
+    )
 };
 
 export default ClientForm;

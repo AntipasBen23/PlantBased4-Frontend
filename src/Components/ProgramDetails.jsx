@@ -191,78 +191,92 @@ const ProgramDetails = () => {
     };
 
     return (
-        <div className="program-details">
-            <motion.h1
-                initial={{ opacity: 0, y: -30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-            >
-                {programName} Program Details
-            </motion.h1>
-            <div className="columns">
-                <motion.div
-                    className="reviews"
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.6 }}
-                >
-                    <h2>Reviews</h2>
-                    {reviewsData.length > 0 && (
-                        <motion.div
-                            className="review"
-                            key={currentReviewIndex}
-                            initial={{ x: -50, opacity: 0 }}
-                            animate={{ x: 0, opacity: 1 }}
-                            exit={{ x: 50, opacity: 0 }}
-                            transition={{ duration: 0.8 }}
-                        >
-                            <p className="review-text">{reviewsData[currentReviewIndex].text}</p>
-                            <div className="review-details">
-                                {reviewsData[currentReviewIndex].image && (
-                                    <img
-                                        src={reviewsData[currentReviewIndex].image}
-                                        alt={reviewsData[currentReviewIndex].name}
-                                        className="review-image"
-                                    />
-                                )}
-                                <div>
-                                    <p className="review-name">{reviewsData[currentReviewIndex].name}</p>
-                                    <div className="rating">
-                                        {"★".repeat(reviewsData[currentReviewIndex].rating)}
-                                    </div>
-                                </div>
-                            </div>
-                        </motion.div>
-                    )}
-                </motion.div>
-                <motion.div
-                    className="scientific-research"
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.6 }}
-                >
-                    <h2>Scientific Research</h2>
-                    <div>{researchData}</div>
-                </motion.div>
-                <motion.div
-                    className="healing-procedure"
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.6 }}
-                >
-                    <h2>Healing Procedure Guidelines</h2>
-                    <ul>
-                        {healingProcedure.map((item, index) => (
-                            <li key={index}>{item}</li>
-                        ))}
-                    </ul>
-                    <button className="pay-now" onClick={handlePayNow}>
-                        Pay Now
-                    </button>
-                </motion.div>
+      <div className='program-detail w-screen h-auto lg:h-screen bg-transparent bg-[#e1e4da] p-0 md:p-8 lg:p-10 flex justify-center'>
+        <div className='w-full md:w-[90%] lg:w-5/6 xl:w-1/2 flex flex-col p-4 md:p-4 rounded'>
+          <motion.h1
+            initial={{ opacity: 0, y: -30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className='mb-4 md:mb-6 text-center py-4 text-lg md:text-2xl lg:text-3xl'
+          >
+            {programName} Program Details
+          </motion.h1>
+          <div className='space-y-5'>
+            <div className='flex flex-col lg:flex-row space-y-5 lg:space-y-0 lg:space-x-5'>
+              <motion.div
+                className='flex-1 bg-white p-4 shadow-md'
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6 }}
+              >
+                <h2 className='text-lg md:text-2xl font-bold'>Reviews</h2>
+                {reviewsData.length > 0 && (
+                  <motion.div
+                    className='flex-1'
+                    key={currentReviewIndex}
+                    initial={{ x: -50, opacity: 0 }}
+                    animate={{ x: 0, opacity: 1 }}
+                    exit={{ x: 50, opacity: 0 }}
+                    transition={{ duration: 0.8 }}
+                  >
+                    <p className='text-base mt-2'>
+                      {reviewsData[currentReviewIndex].text}
+                    </p>
+                    <div className='flex items-end space-x-3 mt-2'>
+                      <div className='flex items-center justify-center w-[100px] h-[100px] rounded-full overflow-hidden bg-gray-200 mt-4'>
+                        {reviewsData[currentReviewIndex].image && (
+                          <img
+                            src={reviewsData[currentReviewIndex].image}
+                            alt={reviewsData[currentReviewIndex].name}
+                            className='object-cover w-full h-full'
+                          />
+                        )}
+                      </div>
+                      <div className='mt-3'>
+                        <p className='review-name'>
+                          {reviewsData[currentReviewIndex].name}
+                        </p>
+                        <div className='rating'>
+                          {'★'.repeat(reviewsData[currentReviewIndex].rating)}
+                        </div>
+                      </div>
+                    </div>
+                  </motion.div>
+                )}
+              </motion.div>
+              <motion.div
+                className='flex-1  bg-white p-4 shadow-md'
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6 }}
+              >
+                <h2 className='text-lg md:text-2xl font-bold'>
+                  Scientific Research
+                </h2>
+                <div className='text-base mt-2'>{researchData}</div>
+              </motion.div>
             </div>
+
+            <motion.div
+              className='healing-procedure'
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6 }}
+            >
+              <h2>Healing Procedure Guidelines</h2>
+              <ul>
+                {healingProcedure.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+              <button className='pay-now' onClick={handlePayNow}>
+                Pay Now
+              </button>
+            </motion.div>
+          </div>
         </div>
-    );
+      </div>
+    )
 };
 
 export default ProgramDetails;

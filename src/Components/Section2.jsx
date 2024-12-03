@@ -1,108 +1,86 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Section2() {
-    const images = [
-        '/Images3/Plantfruit1.png',
-        '/Images3/Plantfruit2.png',
-        '/Images3/Plantfruit3.png',
-        '/Images3/Plantfruit4.png',
-        '/Images3/Plantfruit5.png',
-    ];
+  const images = [
+    '/Images3/Plantfruit1.png',
+    '/Images3/Plantfruit2.png',
+    '/Images3/Plantfruit3.png',
+    '/Images3/Plantfruit4.png',
+    '/Images3/Plantfruit5.png',
+  ]
 
-    const [currentImage, setCurrentImage] = useState(0);
+  const [currentImage, setCurrentImage] = useState(0)
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentImage((prevImage) => (prevImage + 1) % images.length); // Show one image at a time
-        }, 3000); // Adjust timing as needed
-        return () => clearInterval(interval);
-    }, [images.length]);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prevImage) => (prevImage + 1) % images.length)
+    }, 3000)
+    return () => clearInterval(interval)
+  }, [images.length])
 
-    return (
-        <motion.div
-            className="second-section"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-        >
-            {/* Carousel */}
-            <motion.div
-                className="carousel-container"
-                initial={{ x: -50, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 1, delay: 0.3 }}
-            >
-                <div
-                    className="imageSlider"
-                    style={{ '--translateX': `-${currentImage * 100}%` }}
-                >
-                    {images.map((image, index) => (
-                        <motion.img
-                            key={index}
-                            src={image}
-                            alt={`Slide ${index}`}
-                            className="carouselImage"
-                            initial={{ scale: 0.8, opacity: 0 }}
-                            animate={{ scale: 1, opacity: 1 }}
-                            transition={{ duration: 0.5, delay: index * 0.2 }}
-                        />
-                    ))}
-                </div>
-            </motion.div>
+  return (
+    <div className='w-full h-auto min-h-screen flex bg-gray-100 overflow-hidden p-4  md:p-6 lg:p-10'>
+      <div className='w-full md:w-auto flex flex-col lg:flex-row h-full'>
+        <div className='carousel-container flex-1 h-full md:h-auto overflow-hidden order-2 mt-6 lg:mt-0'>
+          <div
+            className='imageSlider h-[400px]'
+            style={{ transform: `translateX(-${currentImage * 100}%)` }}
+          >
+            {images.map((image, index) => (
+              <img
+                key={index}
+                src={image}
+                alt={`Slide ${index}`}
+                className='flex-shrink-0 flex-grow-0 basis-full h-full object-contain'
+              />
+            ))}
+          </div>
+        </div>
 
-            {/* Content Section */}
-            <motion.div
-                className="contentss"
-                initial={{ x: 50, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 1, delay: 0.5 }}
-            >
-                <div className="content-box">
-                    <h2>PLANTBASED NUTRITION AS HEALING:</h2>
-                    <motion.p
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ duration: 1, delay: 1 }}
-                    >
-                        Did you know that food is medicine?<br /><br />
+        <div className='w-full  lg:w-1/2 order-1  px-4 md:px-8 '>
+          <h2 className='text-xl md:text-2xl font-bold'>
+            {' '}
+            Why Plantbased nutrition Heals Your Body?{' '}
+          </h2>
+          <p className='text-black mt-4 '>
+            If you're Tired of chronic diseases holding you back? Science proves
+            that plant-based nutrition can be your cure!
+          </p>
+          <p className='mt-2.5'>
+            🌱 Chronic diseases don't stand a chance when you fuel your body
+            with the right nutrients!
+          </p>
+          <p className='mt-2.5'>
+            💪🏽 Backed by science, a plant-based diet can help reverse heart
+            disease, diabetes, high blood pressure, and more. Ditch processed
+            foods and embrace nature’s pharmacy!
+          </p>
 
-                        🔬 <strong>The Evidence is Clear:</strong><br /><br />
-                        Groundbreaking research shows that proper nutrition can:<br /><br />
+          <p className='mt-2.5'>
+            🌿 Your health transformation starts now—because real healing begins
+            with real food! 🍎🥦
+          </p>
 
-                        ✅ Reverse chronic conditions like Obesity, Diabetes, Cancers, High blood pressure, and hypertension etc.<br /><br />
-
-                        ✅ Boost immune function<br /><br />
-
-                        🩺 Meet the Experts Using Nutrition to Heal:<br /><br />
-                        <strong>- Dr. Michael Greger, MD</strong> – Author of <strong>How Not to Die,</strong> leveraging plant-based diets for chronic disease prevention.<br /><br />
-
-                        <strong>- Dr. Mark Hyman, MD</strong> – Functional medicine pioneer, using food as medicine to fight aging and chronic illness.<br /><br />
-
-                        <strong>🌱The right nutrition can heal your body, one meal at a time.</strong><br /><br />
-
-                        💡 🌱 Choose A Healing Program &<br />
-                        Follow us for:<br />
-                        ✨ Expert insights<br />
-                        ✨ Healing recipes<br />
-                        ✨ Real success stories<br /><br />
-
-                        💚 Your body is designed to thrive. Start your journey today—because healing begins on your plate.<br /><br />
-
-                        Click the link below to start a healing program.<br /><br />
-                    </motion.p>
-               </div>
-                <motion.div
-                    className="S2BtnContainer"
-                    whileTap={{ scale: 0.9 }}
-                    transition={{ duration: 0.2 }}
-                >
-                    <Link to="/healing-programs" style={{ textDecoration: "none" }}>
-                        <button className="S2Btn">Purchase Now</button>
-                    </Link>
-                </motion.div>
-            </motion.div>
-        </motion.div>
-    );
+          <p className='mt-2.5'>
+            🌱 Packed with essential nutrients, plant-based foods can *reduce
+            inflammation, Cancers, Sicklecell, lower blood pressure, manage
+            diabetes*, and more. Reclaim your health naturally—it's time to let
+            food be your medicine! 🍏🥑
+          </p>
+          <p className='mt-2.5'>
+            Want to Start a healthier, disease-free life? Click the link below
+            to start a healing program
+          </p>
+          <div className='w-full flex justify-center lg:justify-start mt-5 md:mt-10'>
+            <Link to='/healing-programs' className='w-full lg:w-auto'>
+              <button className='S2Btn bg-[#609a33] py-3 px-6 w-full'>
+                Purchase Now
+              </button>
+            </Link>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
 }
