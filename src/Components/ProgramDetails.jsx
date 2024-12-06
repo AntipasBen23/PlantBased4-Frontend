@@ -168,6 +168,25 @@ const programData = {
         ],
         research: `Research shows plant-based diets can reduce proteinuria and slow the progression of kidney disease by lowering dietary acid loads and providing essential nutrients.`,
     },
+    "Stroke": {
+        reviews: [
+            {
+                name: "David M.",
+                image: "/ReviewImages/ReviewPic7.jpg",
+                text: `My creatinine levels started dropping after switching to a plant-based diet. My kidney function stabilized, and my doctors are surprised by my progress.`,
+                rating: 5,
+            },
+            {
+                name: "Sarah J.",
+                image: "/ReviewImages/ReviewPic4.jpg",
+                text: `I’ve had polycystic kidney disease for years. After switching to a plant-based diet, my lab results have improved significantly.`,
+                rating: 5,
+            },
+        ],
+        research: `Healing Packages for Stroke Recovery: Restore Your Health Naturally!
+                   Discover the power of science-backed healing with our tailored stroke recovery packages.
+                   Each package is designed to promote long-term healing, support physical rehabilitation, and improve overall well-being. Choose the right plan for you and experience the difference!`,
+    },
 };
 
 const ProgramDetails = () => {

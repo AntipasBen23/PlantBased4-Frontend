@@ -59,6 +59,7 @@ export default function HeroSection() {
                       <li className='basis-1/2 p-0.5'>Gut Issues</li>
                       <li className='basis-1/2 p-0.5'>High-blood Pressure</li>
                       <li className='basis-1/2 p-0.5'>Sickle-cell Anaemia</li>
+                      <li className='basis-1/2 p-0.5'>Hiv/Aids</li>
                     </ul>
                     <button className=' mt-3 w-full'>
                       <Link

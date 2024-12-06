@@ -301,6 +301,44 @@ const packagesData = {
             ],
         },
     },
+    "Stroke": {
+        basic: {
+            title: "Basic Package",
+            price: 100000000, 
+            description: "Comprehensive Healing Plan for Stroke Survivors",
+            imgSrc: "/PackageImages/Plantmea4.png",
+            features: [
+                " - Scientifically-formulated nutrition plan to support brain and nerve regeneration",
+                "- Effective therapy and rehabilitation support to regain motor skills and cognitive function.",
+                "  - Personalized coaching and guidance for a healthier, stroke-free life.",
+                <strong>Consultation fee: ₦50,000</strong>
+            ],
+        },
+        Full: {
+            title: "Full Recovery Package – 180 Days",
+            price: 300000000,
+            description: "Accelerate Your Recovery with Intensive Support",
+            imgSrc: "/PackageImages/Plantmea5.png",
+            features: [
+                "  - 3x longer therapy duration for faster recovery and long-term health benefits.",
+                "  - Advanced stroke rehabilitation therapies (physical, speech, and cognitive).",
+                "  - Targeted nutritional plan with premium ingredients to enhance brain health.",
+                <strong>Consultation fee: ₦50,000</strong>
+            ],
+        },
+        Premium: {
+            title: "Premium Healing Package – 180 Days",
+            price: 1650000000,
+            description: "All-Inclusive Comprehensive Care – Healing from the Inside Out",
+            imgSrc: "/PackageImages/Plantmea7.png",
+            features: [
+                "  - All aspects of the Full Recovery Package PLUS personalized in-home cooking sessions",
+                "- Travel to your location for personal consultations, ensuring you receive the care and attention you deserve.",
+                "  - Advanced therapies focused on deep recovery for both physical and mental health.",
+                " - Round-the-clock assistance from our team of doctors, therapists, and nutritionists."
+            ],
+        },
+    },
 };
 
 const PackageSelection = () => {

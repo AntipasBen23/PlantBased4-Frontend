@@ -4,14 +4,18 @@ import { motion } from 'framer-motion';
 
 export default function HealingPrograms() {
     const programs = [
-        { name: 'Obesity', image: '/HealingProgramImages/HealingPic1.jpg' },
-        { name: 'Weight Gain', image: '/HealingProgramImages/HealingPic2.jpg' },
-        { name: 'Cancer', image: '/HealingProgramImages/HealingPic3.jpg' },
-        { name: 'HIV/AIDS', image: '/HealingProgramImages/HealingPic4.jpg' },
-        { name: 'Sickle Cell', image: '/HealingProgramImages/HealingPic5.jpg' },
-        { name: 'High Blood Pressure', image: '/HealingProgramImages/HealingPic1.jpg' },
-        { name: 'Kidney Disease', image: '/HealingProgramImages/HealingPic2.jpg' },
-        { name: 'And Others', image: '/HealingProgramImages/HealingPic3.jpg' },
+        { name: 'Obesity', image: '/HealingProgramImages/Healingprogram1.jpg' },
+        { name: 'Weight Gain', image: '/HealingProgramImages/Healingprogram2.jpg' },
+        { name: 'Cancer', image: '/HealingProgramImages/Healingprogram3.jpg' },
+        { name: 'HIV/AIDS', image: '/HealingProgramImages/Healingprogram4.jpg' },
+        { name: 'Sickle Cell', image: '/HealingProgramImages/Healingprogram5.jpg' },
+        { name: 'High Blood Pressure', image: '/HealingProgramImages/Healingprogram6.jpg' },
+        { name: 'Kidney Disease', image: '/HealingProgramImages/Healingprogram7.jpg' },
+        { name: 'Stroke', image: '/HealingProgramImages/Healingprogram8.jpg' },
+        { name: 'Gut issues', image: '/HealingProgramImages/Healingprogram9.jpg' },
+        { name: 'Athrithis', image: '/HealingProgramImages/Healingprogram10.jpg' },
+        { name: 'Diabetes', image: '/HealingProgramImages/Healingprogram2.jpg' },    
+        { name: 'Lupus & Autoimmune disease', image: '/HealingProgramImages/Healingprogram3.jpg' },
     ];
 
     return (
