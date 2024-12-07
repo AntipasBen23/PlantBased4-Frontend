@@ -339,6 +339,134 @@ const packagesData = {
             ],
         },
     },
+    "Gut": {
+        basic: {
+            title: "Basic Package: Gut & Ulcer Relief – (60 Days)",
+            price: 45000000, 
+            description: `- What You Get:
+                          - 60 days of a plant-based, gluten-free nutritional plan. 
+                          - Daily recipes packed with raw, protein-rich, healing Nigerian ingredients.
+                          - Customized guidance to soothe ulcers and promote optimal gut health.`,
+            imgSrc: "/PackageImages/Plantmea4.png",
+            features: [
+                "- Relief from gut discomfort and heartburn. ",
+                "- Improved digestion and nutrient absorption.",
+                "- Enhanced energy and well-being. ",
+                <strong>Consultation fee: ₦50,000</strong>
+            ],
+        },
+        Full: {
+            title: "Full Healing Package – (180 Days)",
+            price: 150000000,
+            description: `- What You Get:
+                          - 180 days of a comprehensive meal program tailored for gut health and ulcer recovery.  
+                          - Exclusive access to a variety of wholesome Nigerian recipes.  
+                          - Regular consultations with our health experts.  
+                          - Continuous support to track progress and adjust plans.`,
+            imgSrc: "/PackageImages/Plantmea5.png",
+            features: [
+                "- Long-term healing and prevention of recurrence.",
+                "- Balanced weight management.",
+                "- Improved immunity and overall vitality.",
+                <strong>Consultation fee: ₦50,000</strong>
+            ],
+        },
+        Premium: {
+            title: "Premium VIP Package",
+            price: 1050000000,
+            description: `- What You Get:  
+                          - Everything in the Full Healing Package plus:  
+                          - Personalized in-home cooking services. 
+                          - Dedicated travel services to meet you anywhere.
+                          - Hands-on nutritional coaching tailored to your schedule.`,
+            imgSrc: "/PackageImages/Plantmea7.png",
+            features: [
+                "- Luxury and convenience with unmatched personalized care.",
+                "- Tailored healing solutions in the comfort of your space.",
+                "- A holistic transformation for mind and body.",
+            ],
+        },
+    },
+    "Athrithis": {
+        basic: {
+            title: "Basic Package (60 Days)",
+            price: 150000000, 
+            description: "Benefits:",
+            imgSrc: "/PackageImages/Plantmea4.png",
+            features: [
+                "- Personalized 60-day arthritis-focused meal plan.",
+                "- Wholesome, plant-based recipes rich in anti-inflammatory ingredients.",
+                "- Weekly check-ins with a nutrition specialist.",
+                "- Guidance on incorporating Nigerian plant-based superfoods for lasting relief.",
+                <strong>Consultation fee: ₦50,000</strong>
+            ],
+        },
+        Full: {
+            title: "Full Package (180 Days)",
+            price: 450000000,
+            description: "Benefits:",
+            imgSrc: "/PackageImages/Plantmea5.png",
+            features: [
+                "- Comprehensive 6-month arthritis management program",
+                "- In-depth nutritional assessments and personalized meal adjustments.",
+                "- Access to gluten-free and plant-based recipes tailored for joint health. ",
+                "- Weekly coaching calls for motivation and progress tracking.",
+                <strong>Consultation fee: ₦50,000</strong>
+            ],
+        },
+        Premium: {
+            title: "Premium Package (Personalized & On-the-Go)",
+            price: 1050000000,
+            description: "Benefits:",
+            imgSrc: "/PackageImages/Plantmea7.png",
+            features: [
+                "- Exclusive 6-month program with hands-on support.  ",
+                "- Private chef services for arthritis-friendly meals prepared in your home.",
+                "- Wellness travel assistance for a rejuvenating, arthritis-friendly experience. ",
+            ],
+        },
+    },
+    "Diabetes": {
+        basic: {
+            title: "BASIC PACKAGE - 60 DAYS",
+            price: 8000000, 
+            description: "Benefits:",
+            imgSrc: "/PackageImages/Plantmea4.png",
+            features: [
+                "- Customized meal plans tailored to support diabetes management.",
+                " - Bi-weekly consultations to monitor progress.",
+                "- Evidence-based guidance to stabilize blood sugar levels naturally.",
+                "- Access to healing recipes featuring Nigerian plant-based superfoods. ",
+                <strong>Consultation fee: ₦50,000</strong>
+            ],
+        },
+        Full: {
+            title: "FULL PACKAGE - 180 DAYS",
+            price: 400000000,
+            description: "Benefits:",
+            imgSrc: "/PackageImages/Plantmea5.png",
+            features: [
+                "- Everything in the Basic Package, PLUS:",
+                "- Monthly deep-dive health assessments. ",
+                "- Weekly virtual cooking sessions to master healing recipes.  ",
+                "  - Exclusive plant-based ingredient packs delivered to your door. ",
+                " - Complimentary access to a specialized fitness plan. ",
+                <strong>Consultation fee: ₦50,000</strong>
+            ],
+        },
+        Premium: {
+            title: "PREMIUM PACKAGE - FULL IMMERSIVE CARE",
+            price: 1550000000,
+            description: "Benefits:",
+            imgSrc: "/PackageImages/Plantmea7.png",
+            features: [
+                "- Everything in the Full Package, PLUS:  ",
+                " - Personal chef services—we cook for you in the comfort of your home! ",
+                " - Tailored wellness retreats to deepen your healing. ",
+                " - Round-the-clock access to a dedicated team of experts. ",
+            ],
+        },
+    },
 };
 
 const PackageSelection = () => {

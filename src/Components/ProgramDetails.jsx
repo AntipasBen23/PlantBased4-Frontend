@@ -187,6 +187,33 @@ const programData = {
                    Discover the power of science-backed healing with our tailored stroke recovery packages.
                    Each package is designed to promote long-term healing, support physical rehabilitation, and improve overall well-being. Choose the right plan for you and experience the difference!`,
     },
+    "Gut": {
+        reviews: [
+            {
+                name: "Ada, Lagos",
+                image: "/ReviewImages/ReviewPic11.jpg",
+                text:  "After trying this, I feel lighter and more energetic. My stomach issues are gone!",
+                rating: 5,
+            },
+            {
+                name: "Tolu, Abuja",
+                image: "/ReviewImages/ReviewPic8.jpg",
+                text: "Switching to plant-based nutrition has been life-changing. I didn’t know food could heal like this." ,
+                rating: 5,
+            },
+            {
+              name: "Chinedu, Enugu",
+              image: "/ReviewImages/ReviewPic5.jpg",
+              text: "The recipes are so easy, and my gut feels amazing now. I’m finally sleeping better too!",
+              rating: 5,
+          },
+        ],
+        research: `Join Thousands in Nigeria Transforming Their Gut Health  
+                   Using wholesome, plant-based foods, our program has helped people:  
+                   - Reduce bloating and discomfort  
+                   - Boost digestion and nutrient absorption  
+                   - Regain energy and vitality naturally`,
+    },
 };
 
 const ProgramDetails = () => {
