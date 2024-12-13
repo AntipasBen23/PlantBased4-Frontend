@@ -214,6 +214,106 @@ const programData = {
                    - Boost digestion and nutrient absorption  
                    - Regain energy and vitality naturally`,
     },
+    "Arthritis": {
+      reviews: [
+          {
+              name: "Chinwe, Abuja",
+              image: "/ReviewImages/ReviewPic10.jpg",
+              text: "I was in constant pan untill i switched to a plant-based liefstyle. Now i feel like i'm living again",
+              rating: 5,
+          },
+          {
+              name: "Ade Lagos",
+              image: "/ReviewImages/ReviewPic2.jpg",
+              text: "Who knew Nigerian Plant-based foods like okra, ugu, and tigernut could heal? My joints feel stronger eveyday!", 
+              rating: 4,
+          },
+          {
+            name: "Halima, Kano",
+            image: "/ReviewImages/ReviewPic2.jpg",
+            text: "I ditched processed foods and embraced nature's gift. Arthritis is no longer in charge of my life.", 
+            rating: 4,
+        },
+      ],
+      research: (
+          <>
+              <div>
+              <div>
+              <strong>Why Choose a Plant-Based Diet for Arthritis?</strong>
+              </div>
+              <div>
+                <h5>Anti-Inflamatory Properties</h5>
+                <p>Research shows that plant-based diets are rich in antioxidants and phytochemicals found in fruits,
+                   vegetables, legumes, and nuts. These compounds help reduce inflammation, a key driver of arthritis
+                   symptoms.
+                </p>
+                <strong>Source:"The American Journal of Clinical Nutrition,"2017</strong>
+              </div>
+              </div>
+
+          </>
+      ),
+  },
+  "Diabetes": {
+    reviews: [
+        {
+            name: "Amaka O, Lagos",
+            image: "/ReviewImages/ReviewPic10.jpg",
+            text: "After embracing this plant-based nutrition plan, my blood sugar levels stabilized, and I feel healthier than ever. My doctor even reduced my medications!",
+            rating: 5,
+        },
+        {
+            name: "Ahmed K, Abuja",
+            image: "/ReviewImages/ReviewPic2.jpg",
+            text: "This isn’t just another fad. I followed the program, and in less than 6 months, my HbA1c levels dropped to normal. I never thought it was possible to feel this free!", 
+            rating: 4,
+        },
+    ],
+    research: (
+        <>
+            <p>
+              <strong>Diabetes Scientific evidence</strong><br />
+
+              <strong>Evidence-Backed Results:</strong> <br />
+
+              A 2018 study published in Nutrients found that a whole-food, plant-based diet could lower HbA1c levels, a key indicator of long-term blood glucose control.<br />
+
+              According to the American Diabetes Association, plant-based diets can improve insulin sensitivity and even prevent the onset of Type 2 diabetes in at-risk individuals.
+            </p>
+        </>
+    ),
+},
+"Lupus-&-Autoimmune-disease": {
+  reviews: [
+      {
+          name: "Amina, Lagos",
+          image: "/ReviewImages/ReviewPic10.jpg",
+          text: `After years of battling Lupus with medications and feeling hopeless, I turned to plant-based nutrition.
+                 Within weeks, I noticed a significant improvement in my energy, pain reduction, and overall health.
+                 Today, I live a full, active life — all thanks to this life-changing diet!`,
+          rating: 5,
+      },
+      {
+          name: "Chuka, Abuja",
+          image: "/ReviewImages/ReviewPic2.jpg",
+          text: "I never thought I’d live without the constant flare-ups of Lupus. After committing to a plant-based lifestyle, I feel stronger and healthier than ever. This journey has given me a new lease on life!", 
+          rating: 4,
+      },
+  ],
+  research: (
+      <>
+          <p>
+          Scientific studies reveal that plant-based nutrition:<br />  
+
+          1. <strong>Reduces Inflammation</strong>: High-fiber, antioxidant-rich foods such as fruits, vegetables, nuts, and seeds reduce systemic inflammation, a key driver of lupus flares.<br />  
+           - <strong>Study Insight</strong>: Research shows that polyphenols in plants combat oxidative stress, a hallmark of lupus (source: Frontiers in Immunology, 2020).<br /><br />  
+
+          2. Strengthens the Immune System: A whole-food, plant-based diet balances immune responses, helping to reduce the body's attack on healthy tissues.<br />  
+             <strong>- Study Insight</strong>: Omega-3-rich foods like flaxseeds have shown immunomodulatory benefits in autoimmune diseases (Clinical Rheumatology, 2021).  
+        </p>
+      </>
+  ),
+},
 };
 
 const ProgramDetails = () => {

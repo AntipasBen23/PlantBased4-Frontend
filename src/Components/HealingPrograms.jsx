@@ -13,7 +13,7 @@ export default function HealingPrograms() {
         { name: 'Kidney Disease', image: '/HealingProgramImages/Healingprogram7.jpg' },
         { name: 'Stroke', image: '/HealingProgramImages/Healingprogram8.jpg' },
         { name: 'Gut', image: '/HealingProgramImages/Healingprogram9.jpg' },
-        { name: 'Athrithis', image: '/HealingProgramImages/Healingprogram10.jpg' },
+        { name: 'Arthritis  ', image: '/HealingProgramImages/Healingprogram10.jpg' },
         { name: 'Diabetes', image: '/HealingProgramImages/Healingprogram2.jpg' },    
         { name: 'Lupus & Autoimmune disease', image: '/HealingProgramImages/Healingprogram3.jpg' },
     ];

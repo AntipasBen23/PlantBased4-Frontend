@@ -39,10 +39,10 @@ export default function Section2() {
         </div>
 
         <div className='w-full  lg:w-1/2 order-1  px-4 md:px-8 '>
-          <h2 className='text-xl md:text-2xl font-bold'>
-            {' '}
-            Why Plantbased nutrition Heals Your Body?{' '}
+          <h2 className="text-xl md:text-2xl font-bold text-[#7C997A]">
+            Why Plantbased nutrition Heals Your Body?
           </h2>
+
           <p className='text-black mt-4 '>
             If you're Tired of chronic diseases holding you back? Science proves
             that plant-based nutrition can be your cure!
@@ -74,7 +74,7 @@ export default function Section2() {
           </p>
           <div className='w-full flex justify-center lg:justify-start mt-5 md:mt-10'>
             <Link to='/healing-programs' className='w-full lg:w-auto'>
-              <button className='S2Btn bg-[#609a33] py-3 px-6 w-full'>
+              <button className='S2Btn bg-[#7C997A] py-3 px-6 w-full'>
                 Purchase Now
               </button>
             </Link>

@@ -14,19 +14,19 @@
 
   @keyframes glow {
     0% {
-        box-shadow: 0 0 10px #7fb401, 0 0 20px #7fb401, 0 0 30px #7fb401;
+        box-shadow: 0 0 10px #7C997A, 0 0 20px #7C997A, 0 0 30px #7C997A;
     }
     50% {
-        box-shadow: 0 0 20px #7fb401, 0 0 40px #7fb401, 0 0 60px #7fb401;
+        box-shadow: 0 0 20px #7C997A, 0 0 40px #7C997A, 0 0 60px #7C997A;
     }
     100% {
-        box-shadow: 0 0 10px #7fb401, 0 0 20px #7fb401, 0 0 30px #7fb401;
+        box-shadow: 0 0 10px #7C997A, 0 0 20px #7C997A, 0 0 30px #7C997A;
     }
 }
 
 @keyframes shiny {
     0% {
-        background: linear-gradient(120deg, #7fb401, #a3d203, #7fb401);
+        background: linear-gradient(120deg, #7C997A, #7C997A, #7C997A);
         background-size: 200%;
     }
     50% {
@@ -92,8 +92,8 @@ p{
     color: #4a7e26; 
 } 
 .loader {
-    border: 3px solid #f3f3f3; /* Light grey */
-    border-top: 3px solid #ffa200; /* Brand color */
+    border: 3px solid #f3f3f3; 
+    border-top: 3px solid #ffa200; 
     border-radius: 50%;
     width: 16px;
     height: 16px;
@@ -106,8 +106,8 @@ p{
 
  .imageSlider {
     display: flex;
-    transition: transform 1s ease-in-out; /* Smooth transition */
-    transform: translateX(var(--translateX)); /* Dynamic sliding */
+    transition: transform 1s ease-in-out; 
+    transform: translateX(var(--translateX)); 
 }
  
 .second-section .contentss {
@@ -120,41 +120,41 @@ p{
     overflow-y: scroll;
 }
 .contentss .parr {
-    font-size: 2.2rem; /* Larger font for emphasis */
+    font-size: 2.2rem; 
     font-weight: 800;
     color: #609a33;
-    margin-bottom: 20px; /* Add spacing below the heading */
+    margin-bottom: 20px; 
 }
 
 .contentss p {
-    font-size: 1.1rem; /* Adjust font size for readability */
-    line-height: 1.7; /* Increase line spacing for better readability */
-    margin-bottom: 20px; /* Add spacing between paragraphs */
-    color: #333; /* Use a softer black for text */
+    font-size: 1.1rem; 
+    line-height: 1.7; 
+    margin-bottom: 20px;
+    color: #333; 
 }
 
 .S2BtnContainer {
     display: flex;
-    justify-content:center; /* Align button to the right */
-    width: 100%; /* Ensure the container takes the full width */
+    justify-content: center; 
+    width: 100%; 
 }
 
 .S2Btn {
-    position: relative; /* To enable pseudo-element positioning */
-    padding: 20px 50px; /* Adjusted for a more prominent button */
+    position: relative; 
+    padding: 20px 50px; 
     font-size: 1.2rem;
-    background-color: #7fb401;
-    border-color: #7fb401;
+    background-color: #7C997A;
+    border-color: #7C997A;
     color: #fff;
     border: none;
-    border-radius: 35px; /* Rounded corners */
+    border-radius: 35px; 
     cursor: pointer;
     font-weight: bold;
     text-align: center;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
-    overflow: hidden; /* Prevent overflow from pseudo-element */
-    animation: glow 2s infinite; /* Add glow animation */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+    animation: glow 2s infinite; 
 }
 
 .S2Btn::before {
@@ -179,9 +179,6 @@ p{
     transform: scale(1.1); /* Slight scaling effect on hover */
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
 }
-
-
-
 
 /* Enquiry Form */
 .enquiry-form-container {
@@ -273,7 +270,7 @@ textarea {
 }
 
 button[type="submit"] {
-    background-color: #609a33;
+    background-color: #7C997A;
     color: #fff;
     padding: 12px 20px;
     border: none;

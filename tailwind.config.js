@@ -3,8 +3,12 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
-      customClass: {
-        input: 'custom-swal-input', // Apply custom class for the input field
+      fontFamily: {
+        times: ['Times New Roman', 'serif'], // Times New Roman added earlier
+        arial: ['Arial', 'sans-serif'], // Added Arial font family
+      },
+      fontSize: {
+        custom24: '24px', // Times New Roman custom size (bold 24px)
       },
       animation: {
         glow: 'glow 2s ease-in-out infinite',
@@ -18,6 +22,9 @@ export default {
             boxShadow: '0 0 16px #ffa200, 0 0 24px #e68a00',
           },
         },
+      },
+      customClass: {
+        input: 'custom-swal-input', // Apply custom class for the input field
       },
     },
   },

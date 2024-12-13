@@ -302,91 +302,151 @@ const packagesData = {
         },
     },
     "Stroke": {
-        basic: {
-            title: "Basic Package",
-            price: 100000000, 
-            description: "Comprehensive Healing Plan for Stroke Survivors",
-            imgSrc: "/PackageImages/Plantmea4.png",
-            features: [
-                " - Scientifically-formulated nutrition plan to support brain and nerve regeneration",
-                "- Effective therapy and rehabilitation support to regain motor skills and cognitive function.",
-                "  - Personalized coaching and guidance for a healthier, stroke-free life.",
-                <strong>Consultation fee: ₦50,000</strong>
-            ],
-        },
-        Full: {
-            title: "Full Recovery Package – 180 Days",
-            price: 300000000,
-            description: "Accelerate Your Recovery with Intensive Support",
-            imgSrc: "/PackageImages/Plantmea5.png",
-            features: [
-                "  - 3x longer therapy duration for faster recovery and long-term health benefits.",
-                "  - Advanced stroke rehabilitation therapies (physical, speech, and cognitive).",
-                "  - Targeted nutritional plan with premium ingredients to enhance brain health.",
-                <strong>Consultation fee: ₦50,000</strong>
-            ],
-        },
-        Premium: {
-            title: "Premium Healing Package – 180 Days",
-            price: 1650000000,
-            description: "All-Inclusive Comprehensive Care – Healing from the Inside Out",
-            imgSrc: "/PackageImages/Plantmea7.png",
-            features: [
-                "  - All aspects of the Full Recovery Package PLUS personalized in-home cooking sessions",
-                "- Travel to your location for personal consultations, ensuring you receive the care and attention you deserve.",
-                "  - Advanced therapies focused on deep recovery for both physical and mental health.",
-                " - Round-the-clock assistance from our team of doctors, therapists, and nutritionists."
-            ],
-        },
+    basic: {
+        title: "Basic Package",
+        price: 120000000,
+        description: "Comprehensive Healing Plan for Stroke Survivors",
+        imgSrc: "/PackageImages/Plantmea4.png",
+        features: [
+            <>
+                <p>
+                    <strong>Basic Package</strong> (4 weeks): Jumpstart your recovery with our foundational nutrition plan.
+                </p>
+                <p>
+                    <strong>Consultation fee:</strong> ₦50,000
+                </p>
+            </>,
+        ],
     },
-    "Gut": {
-        basic: {
-            title: "Basic Package: Gut & Ulcer Relief – (60 Days)",
-            price: 45000000, 
-            description: `- What You Get:
-                          - 60 days of a plant-based, gluten-free nutritional plan. 
-                          - Daily recipes packed with raw, protein-rich, healing Nigerian ingredients.
-                          - Customized guidance to soothe ulcers and promote optimal gut health.`,
-            imgSrc: "/PackageImages/Plantmea4.png",
-            features: [
-                "- Relief from gut discomfort and heartburn. ",
-                "- Improved digestion and nutrient absorption.",
-                "- Enhanced energy and well-being. ",
-                <strong>Consultation fee: ₦50,000</strong>
-            ],
-        },
-        Full: {
-            title: "Full Healing Package – (180 Days)",
-            price: 150000000,
-            description: `- What You Get:
-                          - 180 days of a comprehensive meal program tailored for gut health and ulcer recovery.  
-                          - Exclusive access to a variety of wholesome Nigerian recipes.  
-                          - Regular consultations with our health experts.  
-                          - Continuous support to track progress and adjust plans.`,
-            imgSrc: "/PackageImages/Plantmea5.png",
-            features: [
-                "- Long-term healing and prevention of recurrence.",
-                "- Balanced weight management.",
-                "- Improved immunity and overall vitality.",
-                <strong>Consultation fee: ₦50,000</strong>
-            ],
-        },
-        Premium: {
-            title: "Premium VIP Package",
-            price: 1050000000,
-            description: `- What You Get:  
-                          - Everything in the Full Healing Package plus:  
-                          - Personalized in-home cooking services. 
-                          - Dedicated travel services to meet you anywhere.
-                          - Hands-on nutritional coaching tailored to your schedule.`,
-            imgSrc: "/PackageImages/Plantmea7.png",
-            features: [
-                "- Luxury and convenience with unmatched personalized care.",
-                "- Tailored healing solutions in the comfort of your space.",
-                "- A holistic transformation for mind and body.",
-            ],
-        },
+    Full: {
+        title: "Full Package",
+        price: 350000000,
+        description: "Accelerate Your Recovery with Intensive Support",
+        imgSrc: "/PackageImages/Plantmea5.png",
+        features: [
+            <>
+                <p>
+                    <strong>Full Package</strong> (12 weeks): Experience deeper healing and sustainable results, with healing kits.
+                </p>
+                <p>
+                    <strong>Consultation fee:</strong> ₦50,000
+                </p>
+            </>,
+        ],
     },
+    Premium: {
+        title: "Premium Healing Package – 180 Days",
+        price: 1000000000,
+        description: "All-Inclusive Comprehensive Care – Healing from the Inside Out",
+        imgSrc: "/PackageImages/Plantmea7.png",
+        features: [
+            <>
+                <p>
+                    <strong>Premium Package</strong>: Includes personal chef services and exclusive 1-on-1 support to make your healing journey stress-free.
+                </p>
+                <p>
+                    <strong>Consultation fee:</strong> ₦50,000
+                </p>
+            </>,
+        ],
+    },
+},
+
+"Gut": {
+    basic: {
+        title: "Basic Package: Gut & Ulcer Relief – (60 Days)",
+        price: 45000000,
+        description: (
+            <>
+                <p>
+                    <strong>- What You Get:</strong>
+                </p>
+                <ul>
+                    <li>60 days of a plant-based, gluten-free nutritional plan.</li>
+                    <li>Daily recipes packed with raw, protein-rich, healing Nigerian ingredients.</li>
+                    <li>Customized guidance to soothe ulcers and promote optimal gut health.</li>
+                </ul>
+                <p>
+                    <strong>Consultation fee: ₦50,000</strong>
+                </p>
+            </>
+        ),
+        imgSrc: "/PackageImages/Plantmea4.png",
+        features: (
+            <>
+                <p>
+                    <strong>Benefits:</strong>
+                </p>
+                <ul>
+                    <li>Relief from gut discomfort and heartburn.</li>
+                    <li>Improved digestion and nutrient absorption.</li>
+                    <li>Enhanced energy and well-being.</li>
+                </ul>
+            </>
+        ),
+    },
+    Full: {
+        title: "Full Healing Package – (180 Days)",
+        price: 150000000,
+        description: (
+            <>
+                <p>
+                    <strong>- What You Get:</strong>
+                </p>
+                <ul>
+                    <li>180 days of a comprehensive meal program tailored for gut health and ulcer recovery.</li>
+                    <li>Exclusive access to a variety of wholesome Nigerian recipes.</li>
+                    <li>Regular consultations with our health experts.</li>
+                    <li>Continuous support to track progress and adjust plans.</li>
+                </ul>
+            </>
+        ),
+        imgSrc: "/PackageImages/Plantmea5.png",
+        features: (
+            <>
+                <p>
+                    <strong>Benefits:</strong>
+                </p>
+                <ul>
+                    <li>Long-term healing and prevention of recurrence.</li>
+                    <li>Balanced weight management.</li>
+                    <li>Improved immunity and overall vitality.</li>
+                </ul>
+            </>
+        ),
+    },
+    Premium: {
+        title: "Premium VIP Package",
+        price: 1050000000,
+        description: (
+            <>
+                <p>
+                    <strong>- What You Get:</strong>
+                </p>
+                <ul>
+                    <li>Everything in the Full Healing Package plus:</li>
+                    <li>Personalized in-home cooking services.</li>
+                    <li>Dedicated travel services to meet you anywhere.</li>
+                    <li>Hands-on nutritional coaching tailored to your schedule.</li>
+                </ul>
+            </>
+        ),
+        imgSrc: "/PackageImages/Plantmea7.png",
+        features: (
+            <>
+                <p>
+                    <strong>Benefits:</strong>
+                </p>
+                <ul>
+                    <li>Luxury and convenience with unmatched personalized care.</li>
+                    <li>Tailored healing solutions in the comfort of your space.</li>
+                    <li>A holistic transformation for mind and body.</li>
+                </ul>
+            </>
+        ),
+    },
+},
+
     "Athrithis": {
         basic: {
             title: "Basic Package (60 Days)",
@@ -427,6 +487,47 @@ const packagesData = {
         },
     },
     "Diabetes": {
+        basic: {
+            title: "BASIC PACKAGE - 60 DAYS",
+            price: 8000000, 
+            description: "Benefits:",
+            imgSrc: "/PackageImages/Plantmea4.png",
+            features: [
+                "- Customized meal plans tailored to support diabetes management.",
+                " - Bi-weekly consultations to monitor progress.",
+                "- Evidence-based guidance to stabilize blood sugar levels naturally.",
+                "- Access to healing recipes featuring Nigerian plant-based superfoods. ",
+                <strong>Consultation fee: ₦50,000</strong>
+            ],
+        },
+        Full: {
+            title: "FULL PACKAGE - 180 DAYS",
+            price: 400000000,
+            description: "Benefits:",
+            imgSrc: "/PackageImages/Plantmea5.png",
+            features: [
+                "- Everything in the Basic Package, PLUS:",
+                "- Monthly deep-dive health assessments. ",
+                "- Weekly virtual cooking sessions to master healing recipes.  ",
+                "  - Exclusive plant-based ingredient packs delivered to your door. ",
+                " - Complimentary access to a specialized fitness plan. ",
+                <strong>Consultation fee: ₦50,000</strong>
+            ],
+        },
+        Premium: {
+            title: "PREMIUM PACKAGE - FULL IMMERSIVE CARE",
+            price: 1550000000,
+            description: "Benefits:",
+            imgSrc: "/PackageImages/Plantmea7.png",
+            features: [
+                "- Everything in the Full Package, PLUS:  ",
+                " - Personal chef services—we cook for you in the comfort of your home! ",
+                " - Tailored wellness retreats to deepen your healing. ",
+                " - Round-the-clock access to a dedicated team of experts. ",
+            ],
+        },
+    },
+    "Lupus-&-Autoimmune-disease": {
         basic: {
             title: "BASIC PACKAGE - 60 DAYS",
             price: 8000000, 
