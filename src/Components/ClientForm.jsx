@@ -93,8 +93,8 @@ const ClientForm = () => {
     return (
       <div className='w-full overflow-x-hiddenh-auto lg:min-h-screen bg-transparent lg:bg-white p-0 md:p-6 lg:p-10 flex justify-center '>
         <div className='w-[89%] h-full md:h-auto md:w-[95%] lg:w-2/3 xl:w-1/2 md:rounded-lg md:shadow-[0px_2px_10px_rgba(0,0,0,0.2),0px_-2px_10px_rgba(0,0,0,0.2)] md:border border-[#ededed] text-[#333] overflow-hidden  bg-cover bg-center bg-no-repeat bg-[url(./assets/Plantbased2Logo.jpg)]'>
-          <div className='w-full h-full bg-[#f9f9f9] md:bg-opacity-95 py-8 mx-auto p-5 flex flex-col md:block'>
-            <h1 className='text-center text-base font-bold md:text-2xl'>
+          <div className='w-full h-full bg-[#f9f9f9] md:bg-opacity-60 py-8 mx-auto p-5 flex flex-col md:block'>
+            <h1 className='text-center text-base font-bold md:text-2xl text-[#7C997A]'>
               Confidential Client Form
             </h1>
             <p className='mt-2 text-center text-base md:text-lg'>

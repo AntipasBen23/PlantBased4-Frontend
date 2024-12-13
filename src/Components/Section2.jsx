@@ -40,8 +40,8 @@ export default function Section2() {
 
         <div className='w-full lg:w-1/2 order-1 px-4 md:px-8'>
         <h2 className="text-2xl md:text-4xl font-extrabold text-[#7C997A] font-[Georgia, Merriweather]">
-  Why Plantbased Nutrition Heals Your Body?
-</h2>
+          Why Plantbased Nutrition Heals Your Body?
+        </h2>
 
 
 
