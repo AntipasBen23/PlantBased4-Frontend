@@ -38,48 +38,51 @@ export default function Section2() {
           </div>
         </div>
 
-        <div className='w-full  lg:w-1/2 order-1  px-4 md:px-8 '>
-          <h2 className="text-xl md:text-2xl font-bold text-[#7C997A]">
-            Why Plantbased nutrition Heals Your Body?
-          </h2>
+        <div className='w-full lg:w-1/2 order-1 px-4 md:px-8'>
+        <h2 className="text-2xl md:text-4xl font-extrabold text-[#7C997A] font-[Georgia, Merriweather]">
+  Why Plantbased Nutrition Heals Your Body?
+</h2>
 
-          <p className='text-black mt-4 '>
-            If you're Tired of chronic diseases holding you back? Science proves
-            that plant-based nutrition can be your cure!
-          </p>
-          <p className='mt-2.5'>
-            🌱 Chronic diseases don't stand a chance when you fuel your body
-            with the right nutrients!
-          </p>
-          <p className='mt-2.5'>
-            💪🏽 Backed by science, a plant-based diet can help reverse heart
-            disease, diabetes, high blood pressure, and more. Ditch processed
-            foods and embrace nature’s pharmacy!
-          </p>
 
-          <p className='mt-2.5'>
-            🌿 Your health transformation starts now—because real healing begins
-            with real food! 🍎🥦
-          </p>
 
-          <p className='mt-2.5'>
-            🌱 Packed with essential nutrients, plant-based foods can *reduce
-            inflammation, Cancers, Sicklecell, lower blood pressure, manage
-            diabetes*, and more. Reclaim your health naturally—it's time to let
-            food be your medicine! 🍏🥑
-          </p>
-          <p className='mt-2.5'>
-            Want to Start a healthier, disease-free life? Click the link below
-            to start a healing program
-          </p>
-          <div className='w-full flex justify-center lg:justify-start mt-5 md:mt-10'>
-            <Link to='/healing-programs' className='w-full lg:w-auto'>
-              <button className='S2Btn bg-[#7C997A] py-3 px-6 w-full'>
-                Purchase Now
-              </button>
-            </Link>
-          </div>
-        </div>
+  <p className='text-black mt-4 font-bold font-[Georgia, Merriweather]'>
+    If you're tired of chronic diseases holding you back? Science proves
+    that plant-based nutrition can be your cure!
+  </p>
+  <p className='mt-2.5 font-bold font-[Georgia, Merriweather]'>
+    🌱 Chronic diseases don't stand a chance when you fuel your body
+    with the right nutrients!
+  </p>
+  <p className='mt-2.5 font-bold font-[Georgia, Merriweather]'>
+    💪🏽 Backed by science, a plant-based diet can help reverse heart
+    disease, diabetes, high blood pressure, and more. Ditch processed
+    foods and embrace nature’s pharmacy!
+  </p>
+
+  <p className='mt-2.5 font-bold font-[Georgia, Merriweather]'>
+    🌿 Your health transformation starts now—because real healing begins
+    with real food! 🍎🥦
+  </p>
+
+  <p className='mt-2.5 font-bold font-[Georgia, Merriweather]'>
+    🌱 Packed with essential nutrients, plant-based foods can *reduce
+    inflammation, Cancers, Sicklecell, lower blood pressure, manage
+    diabetes*, and more. Reclaim your health naturally—it's time to let
+    food be your medicine! 🍏🥑
+  </p>
+  <p className='mt-2.5 font-bold font-[Georgia, Merriweather]'>
+    Want to start a healthier, disease-free life? Click the link below
+    to start a healing program.
+  </p>
+  <div className='w-full flex justify-center lg:justify-start mt-5 md:mt-10'>
+    <Link to='/healing-programs' className='w-full lg:w-auto'>
+      <button className='S2Btn bg-[#7C997A] py-3 px-6 w-full'>
+        Purchase Now
+      </button>
+    </Link>
+  </div>
+</div>
+
       </div>
     </div>
   )
