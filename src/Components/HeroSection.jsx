@@ -48,7 +48,7 @@ export default function HeroSection() {
                 Heal All Chronic Diseases With Nutrition
               </h1>
               <p className="font-arial text-[12px] md:text-[14px] font-bold tracking-wide mb-4">
-                Our plant-based nutritional programs help significantly manage/cure the following:
+                Our plant-based nutritional programs helps to significantly cure the following:
               </p>
 
               <ul className="list-none space-y-2 text-base font-semibold">

@@ -11,15 +11,26 @@ export default {
         custom24: '24px', // Times New Roman custom size (bold 24px)
       },
       animation: {
-        glow: 'glow 2s ease-in-out infinite',
+        glow: 'glow 2s ease-in-out infinite', // Custom glow animation
+        bounceGlow: 'bounceGlow 3s ease-in-out infinite', // Alternate bounce-glow effect
       },
       keyframes: {
         glow: {
           '0%, 100%': {
-            boxShadow: '0 0 8px #ffa200, 0 0 16px #e68a00',
+            boxShadow: '0 0 8px #7C997A, 0 0 16px #7C997A', // Glow color updated to #7C997A
           },
           '50%': {
-            boxShadow: '0 0 16px #ffa200, 0 0 24px #e68a00',
+            boxShadow: '0 0 16px #7C997A, 0 0 24px #7C997A', // Glow color updated to #7C997A
+          },
+        },
+        bounceGlow: {
+          '0%, 100%': {
+            transform: 'translateY(0) scale(1)',
+            boxShadow: '0 0 8px #7C997A, 0 0 16px #7C997A', // Glow color updated to #7C997A
+          },
+          '50%': {
+            transform: 'translateY(-5px) scale(1.05)',
+            boxShadow: '0 0 16px #7C997A, 0 0 24px #7C997A', // Glow color updated to #7C997A
           },
         },
       },

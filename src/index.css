@@ -133,53 +133,6 @@ p{
     color: #333; 
 }
 
-.S2BtnContainer {
-    display: flex;
-    justify-content: center; 
-    width: 100%; 
-}
-
-.S2Btn {
-    position: relative; 
-    padding: 20px 50px; 
-    font-size: 1.2rem;
-    background-color: #7C997A;
-    border-color: #7C997A;
-    color: #fff;
-    border: none;
-    border-radius: 35px; 
-    cursor: pointer;
-    font-weight: bold;
-    text-align: center;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-    overflow: hidden; 
-    animation: glow 2s infinite; 
-}
-
-.S2Btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -75%;
-    width: 50%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.5);
-    transform: skewX(-45deg);
-    transition: all 0.3s ease;
-}
-
-.S2Btn:hover::before {
-    left: 125%; /* Move the shine effect */
-    transition: all 0.5s ease; /* Smooth transition */
-}
-
-.S2Btn:hover {
-    background-color: #4a7e26; /* Darker green on hover */
-    transform: scale(1.1); /* Slight scaling effect on hover */
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
-}
-
 /* Enquiry Form */
 .enquiry-form-container {
     position: relative;

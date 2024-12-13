@@ -50,7 +50,7 @@ const EnquiryForm = () => {
 
     return (
       <div className=' w-screen h-screen flex justify-center items-center bg-gray-100 overflow-hidden'>
-        <div className='w-full h-full md:h-auto md:w-5/6 lg:w-2/3 xl:w-1/3 md:rounded-lg md:shadow-[0px_2px_10px_rgba(0,0,0,0.2),0px_-2px_10px_rgba(0,0,0,0.2)] md:border border-[#ededed] text-[#333] overflow-hidden  bg-cover bg-center bg-no-repeat bg-[url(./assets/Plantbased2Logo.jpg)]'>
+        <div className='w-full h-full md:h-auto md:w-5/6 lg:w-2/3 xl:w-1/3 md:rounded-lg md:shadow-[0px_2px_10px_rgba(0,0,0,0.2),0px_-2px_10px_rgba(0,0,0,0.2)] md:border border-[#ededed] text-[#333] overflow-hidden  bg-cover bg-center bg-no-repeat bg-[url(./assets/Plantbased2Logo.jpg)] '>
           <div className='w-full h-full bg-[#f9f9f9] md:bg-opacity-60 py-8 mx-auto p-5 flex flex-col md:block'>
             <h1 className='mb-4 md:mb-6 text-[#7C997A] text-center text-xl md:text-2xl lg:text-4xl font-bold'>
               FREE-SCAN FORM

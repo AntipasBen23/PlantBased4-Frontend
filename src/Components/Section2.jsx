@@ -45,42 +45,46 @@ export default function Section2() {
 
 
 
-  <p className='text-black mt-4 font-bold font-[Georgia, Merriweather]'>
+  <p className='text-gray-800 mt-4 font-bold font-[Georgia, Merriweather]'>
     If you're tired of chronic diseases holding you back? Science proves
     that plant-based nutrition can be your cure!
   </p>
-  <p className='mt-2.5 font-bold font-[Georgia, Merriweather]'>
+  <p className='text-gray-800 mt-2.5 font-bold font-[Georgia, Merriweather]'>
     🌱 Chronic diseases don't stand a chance when you fuel your body
     with the right nutrients!
   </p>
-  <p className='mt-2.5 font-bold font-[Georgia, Merriweather]'>
+  <p className='text-gray-800 mt-2.5 font-bold font-[Georgia, Merriweather]'>
     💪🏽 Backed by science, a plant-based diet can help reverse heart
     disease, diabetes, high blood pressure, and more. Ditch processed
     foods and embrace nature’s pharmacy!
   </p>
 
-  <p className='mt-2.5 font-bold font-[Georgia, Merriweather]'>
+  <p className='text-gray-800 mt-2.5 font-bold font-[Georgia, Merriweather]'>
     🌿 Your health transformation starts now—because real healing begins
     with real food! 🍎🥦
   </p>
 
-  <p className='mt-2.5 font-bold font-[Georgia, Merriweather]'>
+  <p className='text-gray-800 mt-2.5 font-bold font-[Georgia, Merriweather]'>
     🌱 Packed with essential nutrients, plant-based foods can *reduce
     inflammation, Cancers, Sicklecell, lower blood pressure, manage
     diabetes*, and more. Reclaim your health naturally—it's time to let
     food be your medicine! 🍏🥑
   </p>
-  <p className='mt-2.5 font-bold font-[Georgia, Merriweather]'>
-    Want to start a healthier, disease-free life? Click the link below
-    to start a healing program.
-  </p>
+  <p className='text-gray-800 mt-2.5 font-extrabold font-[Georgia, Merriweather]'>
+  Want to start a healthier, disease-free life? <br /> Click the link below now
+  to start a healing program.
+</p>
+
   <div className='w-full flex justify-center lg:justify-start mt-5 md:mt-10'>
-    <Link to='/healing-programs' className='w-full lg:w-auto'>
-      <button className='S2Btn bg-[#7C997A] py-3 px-6 w-full'>
-        Purchase Now
-      </button>
-    </Link>
-  </div>
+  <Link to='/healing-programs' className='w-full lg:w-auto'>
+    <button className='S2Btn bg-[#7C997A] text-white font-extrabold py-3 px-6 w-full rounded-lg animate-bounceGlow transition-all duration-500 ease-in-out hover:scale-105 hover:bg-[#609a33]'>
+      Purchase Now
+    </button>
+  </Link>
+</div>
+
+
+
 </div>
 
       </div>
