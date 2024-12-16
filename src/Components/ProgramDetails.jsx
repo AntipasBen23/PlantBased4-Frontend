@@ -406,7 +406,7 @@ const ProgramDetails = () => {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-lg md:text-2xl font-bold">
+              <h2 className="text-lg md:text-2xl font-bold text-[#7C997A]">
                 Scientific Research
               </h2>
               <div className="text-base mt-2">{researchData}</div>
@@ -419,7 +419,7 @@ const ProgramDetails = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="font-bold">Healing Procedure Guidelines</h2>
+            <h2 className="font-bold text-[#7C997A]">Healing Procedure Guidelines</h2>
             <ul>
               {healingProcedure.map((item, index) => (
                 <li key={index}>{item}</li>
