@@ -48,7 +48,7 @@ h1{
 
 h2{
     font-family: 'Comorant', sans-serif;
-    color: #609a33;
+    color: #7C997A
 }
 
 h3{
@@ -122,7 +122,7 @@ p{
 .contentss .parr {
     font-size: 2.2rem; 
     font-weight: 800;
-    color: #609a33;
+    color: #7C997A;
     margin-bottom: 20px; 
 }
 
@@ -130,7 +130,7 @@ p{
     font-size: 1.1rem; 
     line-height: 1.7; 
     margin-bottom: 20px;
-    color: #333; 
+    color: #7C997A; 
 }
 
 /* Enquiry Form */
@@ -430,7 +430,6 @@ button[type="submit"]:hover {
 
 .instruction {
     color: #609a33;
-    font-size: 1.2rem;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -458,7 +457,7 @@ button[type="submit"]:hover {
 
 .pay-now {
     padding: 10px 20px;
-    background-color: #609a33;
+    background-color: #7C997A;
     color: #ffffff;
     border: none;
     border-radius: 25px;
@@ -995,7 +994,7 @@ button[type="submit"]:hover {
 .scientific-research h2,
 .healing-procedure h2 {
     font-size: 24px;
-    color: #609a33;
+    color: #7C997A;
     margin-bottom: 15px;
 }
 
@@ -1040,7 +1039,7 @@ button[type="submit"]:hover {
 }
 
 .pay-now {
-    background-color: #28a745;
+    background-color: #7C997A;
     color: white;
     border: none;
     padding: 12px 20px;
