@@ -12,7 +12,7 @@ export default {
       },
       animation: {
         glow: 'glow 2s ease-in-out infinite', // Custom glow animation
-        bounceGlow: 'bounceGlow 3s ease-in-out infinite', // Alternate bounce-glow effect
+        bounceGlow: 'bounceGlow 3s ease-in-out infinite', // Bounce-glow effect
       },
       keyframes: {
         glow: {
