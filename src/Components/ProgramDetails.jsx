@@ -93,21 +93,23 @@ const programData = {
   "Sickle-Cell": {
     reviews: [
       {
-        name: "Sarah M.",
+        name: "Ifeoma, Lagos",
         image: "/ReviewImages/ReviewPic3.jpg",
-        text: `I was diagnosed with rheumatoid arthritis five years ago, and the medications were taking a toll on my body. Switching to a plant-based diet changed my life.`,
+        text: `Since i switched to a plant-based diet, my symptoms have been milder, and i'm feeling stronger. I've no more crises, i am finally free`,
         rating: 5,
       },
       {
-        name: "Mark R.",
+        name: "Chinonso, Abuja",
         image: "/ReviewImages/ReviewPic5.jpg",
-        text: `As someone living with multiple sclerosis, I felt hopeless. A plant-based diet gave me clarity and reduced fatigue.`,
+        text: `Living with sickle Cell was always a struggle, but since embracing plant-based nutrition, my energy levels have improved. I can do more without the drugs and now permanently healed`,
         rating: 5,
       },
       {
-        name: "Emily T.",
+        name: "Tunde, Port Harcout.",
         image: "/ReviewImages/ReviewPic2.jpg",
-        text: `I have lupus and struggled with flare-ups for years. After attending a workshop on plant-based nutrition, I was inspired to make a change.`,
+        text: `My doctor was amazed by my improvement and complete change about my health. 
+               I believe my switch to plant-based foods healed my body and replace my
+               sickle-Cell to healthy cells, I feel more in control now.`,
         rating: 4,
       },
     ],
