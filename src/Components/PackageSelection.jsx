@@ -652,7 +652,7 @@ const PackageSelection = () => {
         className='w-full min-h-screen flex justify-center bg-[#f3f6ea]'
       >
         <div className='w-full lg:w-3/4 p-4 lg:p-8'>
-          <h2 className='text-[#609a33] text-center text-2xl md:text-3xl lg:text-4xl'>
+          <h2 className='text-[#7C997A] text-center text-2xl md:text-3xl lg:text-4xl font-extrabold text-[#7C997A] font-[Georgia, Merriweather]'>
             {programName} Packages
           </h2>
           <div className='w-full mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8'>
@@ -669,16 +669,16 @@ const PackageSelection = () => {
                       className='productImag w-[150px] h-[150px] rounded-full'
                     />
                   </div>
-                  <h3 className='productName mt-4'>{title}</h3>
-                  <p className='productDescription'>{description}</p>
-                  <ul className='featureList'>
+                  <h3 className='productName mt-4 font-extrabold text-[#7C997A] font-[Georgia, Merriweather]'>{title}</h3>
+                  <p className='productDescription font-extrabold font-[Georgia, Merriweather]'>{description}</p>
+                  <ul className='featureList font-bold font-[Georgia, Merriweather]'>
                     {features.map((feature, index) => (
                       <li key={index} className='featureItem'>
                         {feature}
                       </li>
                     ))}
                   </ul>
-                  <span className='price'>
+                  <span className='price text-2xl md:text-3xl font-bold'>
                     ₦
                     {(price / 100).toLocaleString('en-US', {
                       minimumFractionDigits: 2,
@@ -687,7 +687,7 @@ const PackageSelection = () => {
                   </span>
                   <div className='w-full lg:flex justify-center mt-6'>
                     <button
-                      className='ctaButton w-full'
+                      className='ctaButton w-full S2Btn bg-[#7C997A] text-white font-extrabold py-3 px-6 w-full rounded-lg animate-bounceGlow transition-all duration-500 ease-in-out hover:scale-105 hover:bg-[#609a33]'
                       onClick={() => handleBuyNow(title, price)}
                     >
                       Buy Now

@@ -63,11 +63,7 @@ p{
      font-family: 'Roboto', sans-serif; 
 }
 
-
-
 /* HeroSection */
-
-
 .cta-container .autoTypingText {
     background-color: transparent; 
     color: #fff; 
@@ -103,7 +99,6 @@ p{
 }
 
 /* Section2 */
-
  .imageSlider {
     display: flex;
     transition: transform 1s ease-in-out; 
@@ -168,7 +163,7 @@ p{
 }
 
 .enquiry-form-container h1 {
-    color: #609a33;
+    color: #7C997A;
     margin-bottom: 20px;
     font-size: 2.5rem;
     font-weight: bold;
@@ -191,7 +186,7 @@ label {
     top: 50%;
     left: 10px;
     transform: translateY(-50%);
-    color: #609a33;
+    color: #7C997A;
     font-size: 1.2rem;
 }
 
@@ -341,9 +336,6 @@ button[type="submit"]:hover {
     }
 }
 
- 
-
-
 @keyframes glow {
     0% {
         box-shadow: 0 0 5px rgba(127, 180, 1, 0.5);
@@ -366,7 +358,7 @@ button[type="submit"]:hover {
 }
 
 .healing-progrs h1 {
-    color: #609a33;
+    color: #7C997A;
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
@@ -410,7 +402,7 @@ button[type="submit"]:hover {
 
 .colum button {
     padding: 14px 22px;
-    background-color: #609a33;
+    background-color: #7C997A;
     color: #ffffff;
     border: none;
     border-radius: 25px;
@@ -429,7 +421,7 @@ button[type="submit"]:hover {
 }
 
 .instruction {
-    color: #609a33;
+    color: #7C997A;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -717,10 +709,9 @@ button[type="submit"]:hover {
 .heading {
     text-align: center;
     font-size: 36px;
-    color: #609a33;
+    color: #7C997A;
     margin-bottom: 40px;
     padding: 20px 0;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 .productGrid {
     display: flex;
@@ -760,7 +751,7 @@ button[type="submit"]:hover {
 
 .productName {
     font-size: 24px;
-    color: #333;
+    color: #7C997A;
     margin-bottom: 10px;
 }
 
@@ -785,12 +776,12 @@ button[type="submit"]:hover {
 .price {
     font-size: 20px;
     font-weight: bold;
-    color: #28a745;
+    color: #7C997A;
     margin-bottom: 15px;
 }
 
 .ctaButton {
-    background-color: #28a745;
+    background-color: #7C997A;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -805,7 +796,6 @@ button[type="submit"]:hover {
     background-color: #218838;
     transform: scale(1.1);
 }
-
 
 .custom-ok-button {
     background-color: #b3db94 !important; /* Green background */

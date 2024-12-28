@@ -87,6 +87,12 @@ const programData = {
         text: `After my colon cancer diagnosis, I realized that my diet needed a complete overhaul. I started incorporating more plant-based foods.`,
         rating: 5,
       },
+      {
+        name: "Chinenye, Abuja. Colon Breast Cancer Stage 2 Survivor",
+        image: "/ReviewImages/ReviewPic3.jpg",
+        text: ` I started the Plantbased meal cos I was diagnosed with stage two cancer of the breast but before I joined, I was doing a little bit of it thinking it was right but as soon as I came across this page on instagram, I called immediately and keyed in. I was given a diet plan totally different from what I was doing. I have done it now for one month and two weeks and the result is tremendous. I feel so much energy and am seeing a lot of changes in my body just like I was told. You are what you eat really and God gave us plant as food. Plantbased meal is a way of life and am enjoying it.`,
+        rating: 5,
+      },
     ],
     research: `The American Institute for Cancer Research (AICR) highlights that plant-based diets rich in antioxidants, fiber, and phytochemicals help reduce the risk of cancer.`,
   },
